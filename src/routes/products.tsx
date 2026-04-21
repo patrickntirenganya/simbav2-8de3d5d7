@@ -40,9 +40,9 @@ function ProductsPage() {
 
   const search = q ?? "";
   const setSearch = (v: string) =>
-    navigate({ search: (prev) => ({ ...prev, q: v || undefined }) });
+    navigate({ search: (prev: Search) => ({ ...prev, q: v || undefined }) });
   const setCategory = (c: string | null) =>
-    navigate({ search: (prev) => ({ ...prev, category: c ?? undefined }) });
+    navigate({ search: (prev: Search) => ({ ...prev, category: c ?? undefined }) });
 
   const filtered = useMemo(() => {
     return products
