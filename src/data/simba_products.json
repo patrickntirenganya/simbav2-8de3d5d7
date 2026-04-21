@@ -1,0 +1,4010 @@
+{
+  "store": {
+    "name": "Simba Supermarket",
+    "tagline": "Rwanda's Online Supermarket",
+    "location": "Kigali, Rwanda",
+    "currency": "RWF"
+  },
+  "products": [
+    {
+      "id": 13001,
+      "name": "Lentz Radiant Heater 80036",
+      "price": 83600,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 13,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507692/simba_contest/product_13001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 13002,
+      "name": "Simba SS Icecream Scoop 24SL07P-885",
+      "price": 3000,
+      "category": "Personal Care",
+      "subcategoryId": 13,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507692/simba_contest/product_13002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 13003,
+      "name": "Simba SS Shovel 24SL07P-829",
+      "price": 3000,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 13,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507692/simba_contest/product_13003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 15001,
+      "name": "Plastic Massage Roller 23SL12H-1867 55cm",
+      "price": 8136,
+      "category": "General",
+      "subcategoryId": 15,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507692/simba_contest/product_15001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16001,
+      "name": "Aviation Remote Controlled Plane 163-6688-55",
+      "price": 15500,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507693/simba_contest/product_16001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16002,
+      "name": "BUIlding Blocks 1110",
+      "price": 14800,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507693/simba_contest/product_16002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16003,
+      "name": "Drawing Board Art 628-57",
+      "price": 12600,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507693/simba_contest/product_16003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16004,
+      "name": "Jump Rope GH315",
+      "price": 2500,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507692/simba_contest/product_16004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16005,
+      "name": "Little Kids/baby Doll AD023",
+      "price": 15900,
+      "category": "Baby Products",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507693/simba_contest/product_16005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16006,
+      "name": "RC Space Shuttle PY198-19D",
+      "price": 9500,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507693/simba_contest/product_16006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16007,
+      "name": "Remote Control Car Ht277",
+      "price": 17500,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507695/simba_contest/product_16007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 16008,
+      "name": "Remote Control Car UD2100C",
+      "price": 26800,
+      "category": "General",
+      "subcategoryId": 16,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507695/simba_contest/product_16008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 19001,
+      "name": "Sutai Electric Pan ST-903 (24SL10P-979)",
+      "price": 30000,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 19,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507694/simba_contest/product_19001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 22001,
+      "name": "Jambo Scoth J016",
+      "price": 1500,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 22,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507694/simba_contest/product_22001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 22002,
+      "name": "Sinar Line Photocopying Paper A4",
+      "price": 8100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 22,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507695/simba_contest/product_22002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 22003,
+      "name": "Smart Copy Paper A4",
+      "price": 9100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 22,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507695/simba_contest/product_22003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27001,
+      "name": "ABK6 Cognac VS Pure Single 1L",
+      "price": 61000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507695/simba_contest/product_27001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27002,
+      "name": "ABK6 Cognac VSOP 1L",
+      "price": 137000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507696/simba_contest/product_27002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27003,
+      "name": "ABK6 Cognac VSOP 700ml",
+      "price": 92500,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507696/simba_contest/product_27003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27004,
+      "name": "CAMPARI orange 100cl",
+      "price": 51500,
+      "category": "General",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507701/simba_contest/product_27004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27005,
+      "name": "Cinzano Bianco 1L",
+      "price": 22000,
+      "category": "General",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507698/simba_contest/product_27005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27006,
+      "name": "Cinzano Vermouth Extra Dry 1L",
+      "price": 21500,
+      "category": "General",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507700/simba_contest/product_27006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27007,
+      "name": "Donjulio Tequila Anejo 750ml",
+      "price": 228000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507699/simba_contest/product_27007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 27008,
+      "name": "Reviseur Cognac Single Estate 1L",
+      "price": 132000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 27,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507700/simba_contest/product_27008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 29001,
+      "name": "River Dog Shampoo 1L",
+      "price": 4600,
+      "category": "Personal Care",
+      "subcategoryId": 29,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507699/simba_contest/product_29001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 29002,
+      "name": "River Dog Shampoo 5L",
+      "price": 9100,
+      "category": "Personal Care",
+      "subcategoryId": 29,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507699/simba_contest/product_29002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 58001,
+      "name": "Nestle Lactogen No 1 Baby Milk 400g",
+      "price": 9900,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 58,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507698/simba_contest/product_58001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61001,
+      "name": "Baguette",
+      "price": 900,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507700/simba_contest/product_61001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61002,
+      "name": "Brown Buggette 1Pcs",
+      "price": 800,
+      "category": "General",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507699/simba_contest/product_61002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61003,
+      "name": "Campagne 500gm",
+      "price": 800,
+      "category": "General",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507703/simba_contest/product_61003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61004,
+      "name": "Cheese pie small",
+      "price": 600,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507701/simba_contest/product_61004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61005,
+      "name": "Clamic Bread",
+      "price": 1200,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507702/simba_contest/product_61005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61006,
+      "name": "Croissant Salt",
+      "price": 550,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507702/simba_contest/product_61006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61007,
+      "name": "Mini Baguette 100g",
+      "price": 300,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507703/simba_contest/product_61007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61008,
+      "name": "Pain a La Cream",
+      "price": 400,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507702/simba_contest/product_61008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61009,
+      "name": "Pain Raisin 400g",
+      "price": 800,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507702/simba_contest/product_61009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61010,
+      "name": "Salt Bread",
+      "price": 1400,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507703/simba_contest/product_61010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61011,
+      "name": "Salt Sandwich",
+      "price": 1400,
+      "category": "Baking & Pantry",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507703/simba_contest/product_61011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61012,
+      "name": "Sweet Bread",
+      "price": 1400,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507703/simba_contest/product_61012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61013,
+      "name": "Sweet Sandwich Bread",
+      "price": 1400,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507704/simba_contest/product_61013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 61014,
+      "name": "Vanilla cakes",
+      "price": 2000,
+      "category": "Bakery",
+      "subcategoryId": 61,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507704/simba_contest/product_61014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 62001,
+      "name": "American Fresh Chicken Luncheon Meat 320g",
+      "price": 4400,
+      "category": "Canned & Prepared",
+      "subcategoryId": 62,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_62001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 62002,
+      "name": "DOLO CORNED BEEF 200G",
+      "price": 8300,
+      "category": "Canned & Prepared",
+      "subcategoryId": 62,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_62002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 62003,
+      "name": "Mila 6 Chicken Sausage 425g",
+      "price": 6800,
+      "category": "Canned & Prepared",
+      "subcategoryId": 62,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_62003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 62004,
+      "name": "Super Chef Corned Beef 340g",
+      "price": 6700,
+      "category": "Canned & Prepared",
+      "subcategoryId": 62,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_62004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65001,
+      "name": "Basso Extra Virgin Olive oil 250ml",
+      "price": 8400,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_65001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65002,
+      "name": "Basso Extra Virgin Olive oil 500ml",
+      "price": 13300,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_65002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65003,
+      "name": "Basso Extra Virgin Olive oil 750ml",
+      "price": 19000,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507705/simba_contest/product_65003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65004,
+      "name": "Basso Extra Virgin Olive oil1L",
+      "price": 25000,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507706/simba_contest/product_65004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65005,
+      "name": "Basso Olive Pomace Oil 500ml",
+      "price": 8400,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65006,
+      "name": "Crystal Cooking Oil Sun Flower 5L",
+      "price": 20500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65007,
+      "name": "Crystal Sun flower Cooking oil 1L",
+      "price": 4300,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65008,
+      "name": "Crystal Sun flower Cooking oil 3L",
+      "price": 12600,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65009,
+      "name": "Flora Sunflower oil 1L",
+      "price": 3900,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65010,
+      "name": "Flora Sunflower oil 5L",
+      "price": 20500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65011,
+      "name": "Jambo Extra Virgin Olive oil 500ml",
+      "price": 11100,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65012,
+      "name": "Jambo Olive oil 1L",
+      "price": 21000,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65013,
+      "name": "Jambo Sunflower Oil 1L",
+      "price": 4000,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507707/simba_contest/product_65013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65014,
+      "name": "Jambo Sunflower Oil 3L",
+      "price": 12000,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507708/simba_contest/product_65014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65015,
+      "name": "Jambo Sunflower Oil 5L",
+      "price": 20500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507709/simba_contest/product_65015.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65016,
+      "name": "R.S Rafael Salgado Olive oil 1Ltr",
+      "price": 19600,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507709/simba_contest/product_65016.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65017,
+      "name": "Rinsun Sunflower oil 5Kg",
+      "price": 25800,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507709/simba_contest/product_65017.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65018,
+      "name": "RS Refined Olive Pomace Olive Oil 500ml",
+      "price": 10500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507710/simba_contest/product_65018.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65019,
+      "name": "Sabroso olive oil 1L",
+      "price": 18100,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507710/simba_contest/product_65019.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65020,
+      "name": "Zima Avocado Oil Extra virgin 250ml",
+      "price": 5500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507710/simba_contest/product_65020.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65021,
+      "name": "Zima Avocado Oil Extra virgin 750ml",
+      "price": 14000,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507710/simba_contest/product_65021.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65022,
+      "name": "Zima Blended Extra Virgin oil 250ml",
+      "price": 5500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507710/simba_contest/product_65022.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 65023,
+      "name": "Zima Pumpkin Seed Oil 750ml",
+      "price": 14100,
+      "category": "Cooking Essentials",
+      "subcategoryId": 65,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507710/simba_contest/product_65023.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66001,
+      "name": "Inyange Low Fat Milk 500ML",
+      "price": 800,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507711/simba_contest/product_66001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66002,
+      "name": "Inyange milk 1L",
+      "price": 1600,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507711/simba_contest/product_66002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66003,
+      "name": "Inyange whole milk 500ml",
+      "price": 800,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507712/simba_contest/product_66003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66004,
+      "name": "Kentaste Coconut Cream 400ml",
+      "price": 4800,
+      "category": "Personal Care",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507712/simba_contest/product_66004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66005,
+      "name": "Kentaste Coconut Milk 400ml",
+      "price": 2800,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507713/simba_contest/product_66005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66006,
+      "name": "Mukamira Flavoured milk choc 250ml",
+      "price": 500,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507713/simba_contest/product_66006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66007,
+      "name": "Mukamira Flavoured milk strwb 250ml",
+      "price": 500,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507714/simba_contest/product_66007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66008,
+      "name": "Mukamira Flavoured milk Vanilla 250ml",
+      "price": 500,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507713/simba_contest/product_66008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66009,
+      "name": "Mukamira Whole milk 250ml",
+      "price": 450,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507714/simba_contest/product_66009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 66010,
+      "name": "Mukamira Whole Milk 500ml",
+      "price": 800,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 66,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507717/simba_contest/product_66010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67001,
+      "name": "Azam HBF wheate flour 2kg",
+      "price": 3300,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507716/simba_contest/product_67001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67002,
+      "name": "Azam Plain Wheat Flour 2Kg",
+      "price": 3300,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507716/simba_contest/product_67002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67003,
+      "name": "Azania HBF Baking Flour 1kg",
+      "price": 1500,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507715/simba_contest/product_67003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67004,
+      "name": "Azania HBF Baking Flour 2kg",
+      "price": 3000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507715/simba_contest/product_67004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67005,
+      "name": "Clovers Corn Flour 440g",
+      "price": 1500,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507715/simba_contest/product_67005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67006,
+      "name": "Everyday Bread Crumbs 400g 15517",
+      "price": 2700,
+      "category": "Bakery",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507717/simba_contest/product_67006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67007,
+      "name": "Greens cream caramel 70gm",
+      "price": 1900,
+      "category": "Personal Care",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507717/simba_contest/product_67007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67008,
+      "name": "Kenton Fruity SOS 80G",
+      "price": 1700,
+      "category": "General",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507717/simba_contest/product_67008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67009,
+      "name": "Minimex maize flour 2Kg",
+      "price": 2600,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507717/simba_contest/product_67009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67010,
+      "name": "Super Chef Corn Flour 400g",
+      "price": 2000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507718/simba_contest/product_67010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67011,
+      "name": "Toha Composite Flour 1Kg",
+      "price": 4300,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507718/simba_contest/product_67011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67012,
+      "name": "Zesta Baking Powder 250g",
+      "price": 1800,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507718/simba_contest/product_67012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67013,
+      "name": "Zesta Baking Powder 500g",
+      "price": 3400,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507718/simba_contest/product_67013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67014,
+      "name": "Zesta Corn Flour 400g",
+      "price": 2000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507719/simba_contest/product_67014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 67015,
+      "name": "Zesta mandazi Bora Baking Powder 100g",
+      "price": 500,
+      "category": "Baking & Pantry",
+      "subcategoryId": 67,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507719/simba_contest/product_67015.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70001,
+      "name": "Amercan Garden Ketchup 425g",
+      "price": 5200,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507719/simba_contest/product_70001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70002,
+      "name": "American Garden Mayonnaise 887 ml",
+      "price": 12900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507719/simba_contest/product_70002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70003,
+      "name": "American Garden Tomato Chilli 340g",
+      "price": 2200,
+      "category": "General",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507720/simba_contest/product_70003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70004,
+      "name": "American Garden US Ketchup 680g",
+      "price": 6500,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507720/simba_contest/product_70004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70005,
+      "name": "American Garden Yellow Mustard 397g",
+      "price": 4400,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507721/simba_contest/product_70005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70006,
+      "name": "American Kitchen Yellow Mustard 236ml",
+      "price": 5800,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507721/simba_contest/product_70006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70007,
+      "name": "American U.S Ketchup 1.02kg",
+      "price": 8900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507721/simba_contest/product_70007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70008,
+      "name": "Belle France Mustard 350g",
+      "price": 5200,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507721/simba_contest/product_70008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70009,
+      "name": "Blue Band Mayonnaise With lemon 500ml",
+      "price": 4900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507722/simba_contest/product_70009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70010,
+      "name": "Everyday Classic Mustard 350g",
+      "price": 3500,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507722/simba_contest/product_70010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70011,
+      "name": "Golden Valley Tomato Ketchup 360g",
+      "price": 3400,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507721/simba_contest/product_70011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70012,
+      "name": "Herman Black Pepper Mayonnaise 500ml",
+      "price": 5100,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507721/simba_contest/product_70012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70013,
+      "name": "Herman Garlic Mayonnaise 500ml",
+      "price": 5100,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507722/simba_contest/product_70013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70014,
+      "name": "Herman Mustard Sauce 226g",
+      "price": 2700,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507722/simba_contest/product_70014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70015,
+      "name": "Herman Real Mayonnaise 473ml",
+      "price": 6600,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507723/simba_contest/product_70015.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70016,
+      "name": "Jambo Mayonnaise Lemon 500ml",
+      "price": 4900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507724/simba_contest/product_70016.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70017,
+      "name": "Kenzy Tomato Ketchup 300g",
+      "price": 1200,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507723/simba_contest/product_70017.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70018,
+      "name": "Kevian Ketchup 700g",
+      "price": 5900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507724/simba_contest/product_70018.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70019,
+      "name": "Super Chef Mustard 200g",
+      "price": 4900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507724/simba_contest/product_70019.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70020,
+      "name": "Zesta Eggless Mayonnaise 340g",
+      "price": 3000,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507724/simba_contest/product_70020.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70021,
+      "name": "Zesta Mayochups Ketchup 375g",
+      "price": 6000,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507725/simba_contest/product_70021.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70022,
+      "name": "Zesta Tomato Ketchup 700g",
+      "price": 3800,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507724/simba_contest/product_70022.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 70023,
+      "name": "Zesta Yellow Mustard 240g",
+      "price": 1900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 70,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507725/simba_contest/product_70023.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71001,
+      "name": "Baba Noor Basmati Rice 10kg",
+      "price": 32500,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507726/simba_contest/product_71001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71002,
+      "name": "Baba Noor Basmati Rice 5kg",
+      "price": 15600,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507729/simba_contest/product_71002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71003,
+      "name": "Belle France Basmati Rice 500g",
+      "price": 4700,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507728/simba_contest/product_71003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71004,
+      "name": "Belle France couscous 1Kg",
+      "price": 6700,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507727/simba_contest/product_71004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71005,
+      "name": "Belle France couscous 500g",
+      "price": 3700,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507727/simba_contest/product_71005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71006,
+      "name": "Boni Sele Couscous 500g",
+      "price": 3900,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507728/simba_contest/product_71006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71007,
+      "name": "Boni Selection Couscous 1Kg 14748",
+      "price": 6900,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507727/simba_contest/product_71007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71008,
+      "name": "Daily Fresh Brown Rice 1kg",
+      "price": 6500,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507728/simba_contest/product_71008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71009,
+      "name": "La Qilla Brown Basmati Rice 1kg",
+      "price": 5000,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507728/simba_contest/product_71009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71010,
+      "name": "La Qilla Brown Basmati Rice 5kg",
+      "price": 25000,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507728/simba_contest/product_71010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 71011,
+      "name": "La Qilla Brown diabetic Rice 5kg",
+      "price": 25400,
+      "category": "Grains & Cereals",
+      "subcategoryId": 71,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507729/simba_contest/product_71011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72001,
+      "name": "Simba mbili curry powder 100g",
+      "price": 3100,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507729/simba_contest/product_72001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72002,
+      "name": "Akabanga pilipili 100ml",
+      "price": 3900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507729/simba_contest/product_72002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72003,
+      "name": "Akabanga Yellow Pepper 20ml",
+      "price": 1300,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507730/simba_contest/product_72003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72004,
+      "name": "Kazuri Chili oil 250g",
+      "price": 3500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507730/simba_contest/product_72004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72005,
+      "name": "Kazuri Chili sauce 250g",
+      "price": 3300,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507731/simba_contest/product_72005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72006,
+      "name": "Ketepa jani green tea lemon 25 Teabags",
+      "price": 2500,
+      "category": "Beverages",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507735/simba_contest/product_72006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72007,
+      "name": "Ketepa jani jasmine green tea 25 Teabags",
+      "price": 2100,
+      "category": "Beverages",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507733/simba_contest/product_72007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72008,
+      "name": "Ketepa pride Green tea mint 25 Teabags",
+      "price": 2600,
+      "category": "Beverages",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507731/simba_contest/product_72008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72009,
+      "name": "Ketepa pride masala tea 25 Teabags",
+      "price": 1900,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507731/simba_contest/product_72009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72010,
+      "name": "Maggi Cubes 20 pcs 80g",
+      "price": 1000,
+      "category": "General",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507733/simba_contest/product_72010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72011,
+      "name": "Maggi Cubes 39 pcs 156g",
+      "price": 2200,
+      "category": "General",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507741/simba_contest/product_72011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72012,
+      "name": "Salsafram Food Coloring 55g",
+      "price": 2600,
+      "category": "General",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507734/simba_contest/product_72012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72013,
+      "name": "Salsafram Ground cumin 39g",
+      "price": 2600,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507735/simba_contest/product_72013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72014,
+      "name": "Simba Mbili Curry Powder 200g",
+      "price": 4200,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507738/simba_contest/product_72014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72015,
+      "name": "Tropica Heat Chiken masala 100g",
+      "price": 2000,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507735/simba_contest/product_72015.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72016,
+      "name": "Tropica Heat Cloves Spice 50g",
+      "price": 3300,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507735/simba_contest/product_72016.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72017,
+      "name": "Tropical heat Beef Masala 100gm",
+      "price": 2000,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507736/simba_contest/product_72017.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72018,
+      "name": "Tropical Heat Cinnamon Spice 50g",
+      "price": 1350,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507736/simba_contest/product_72018.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72019,
+      "name": "Tropical Heat Cumin Spice 50g",
+      "price": 2000,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507736/simba_contest/product_72019.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72020,
+      "name": "Tropical Heat Fish Masala 100g",
+      "price": 2000,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507738/simba_contest/product_72020.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72021,
+      "name": "Tropical Heat Garlic Powder 100g",
+      "price": 3500,
+      "category": "General",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507737/simba_contest/product_72021.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72022,
+      "name": "Tropical Heat Ginger 100g",
+      "price": 3700,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507737/simba_contest/product_72022.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72023,
+      "name": "Tropical Heat Mixed Spice 50g",
+      "price": 1700,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507738/simba_contest/product_72023.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72024,
+      "name": "Tropical Heat Pilau Masala 50g",
+      "price": 2100,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507738/simba_contest/product_72024.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72025,
+      "name": "Tropical heat Salad Seasoning 50g",
+      "price": 900,
+      "category": "General",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507738/simba_contest/product_72025.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72026,
+      "name": "Tropical Heat Turemric Spice 100g",
+      "price": 2700,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507738/simba_contest/product_72026.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72027,
+      "name": "Tropical Heat Turmeric Spice 50g",
+      "price": 1400,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507739/simba_contest/product_72027.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 72028,
+      "name": "Zesta Bi-Carbonate of Soda 100g",
+      "price": 500,
+      "category": "General",
+      "subcategoryId": 72,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507739/simba_contest/product_72028.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73001,
+      "name": "American Icing Sugar 500g",
+      "price": 2800,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507740/simba_contest/product_73001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73002,
+      "name": "Canderel Sweetener 80g",
+      "price": 7797,
+      "category": "General",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507740/simba_contest/product_73002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73003,
+      "name": "Canderel Sweetner 120sticks",
+      "price": 9500,
+      "category": "General",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507741/simba_contest/product_73003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73004,
+      "name": "Canderel Vanilla Sweetner 50 sticks 100g",
+      "price": 8200,
+      "category": "General",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507741/simba_contest/product_73004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73005,
+      "name": "Daily Fresh Granulated Sugar 2Kg",
+      "price": 7800,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507742/simba_contest/product_73005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73006,
+      "name": "Everyday Tablets 72g 38411",
+      "price": 2900,
+      "category": "General",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507746/simba_contest/product_73006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73007,
+      "name": "ILlovo Brown Sugar 1Kg",
+      "price": 1900,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507744/simba_contest/product_73007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73008,
+      "name": "King Icing Sugar 500g",
+      "price": 2200,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507742/simba_contest/product_73008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73009,
+      "name": "Lucky Graine Fine Sugar 2kg",
+      "price": 8000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507742/simba_contest/product_73009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73010,
+      "name": "Super chef Brown Sugar 1kg",
+      "price": 5800,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507743/simba_contest/product_73010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 73011,
+      "name": "Super Chef Sugar 5Kg",
+      "price": 20000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 73,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507743/simba_contest/product_73011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74001,
+      "name": "Belle France Chicoree Cafe 100g",
+      "price": 7900,
+      "category": "General",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507744/simba_contest/product_74001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74002,
+      "name": "Cafe de Maraba 500g",
+      "price": 11750,
+      "category": "General",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507745/simba_contest/product_74002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74003,
+      "name": "Gorilla's Coffee 3 In 1 Creamy and sweet",
+      "price": 4800,
+      "category": "Personal Care",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507745/simba_contest/product_74003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74004,
+      "name": "Gorillas Coffee 500g",
+      "price": 12600,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507745/simba_contest/product_74004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74005,
+      "name": "Gorillas Coffee Beans 500g",
+      "price": 12600,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507745/simba_contest/product_74005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74006,
+      "name": "Gorillas Coffee Powder 250g",
+      "price": 6900,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507746/simba_contest/product_74006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74007,
+      "name": "Gorilla's instant Coffee 150g",
+      "price": 11000,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507746/simba_contest/product_74007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74008,
+      "name": "Gorilla's instant Coffee 40g",
+      "price": 3500,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507746/simba_contest/product_74008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74009,
+      "name": "Gorillas Instant Coffee 50 sachets of 2g",
+      "price": 11600,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507751/simba_contest/product_74009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74010,
+      "name": "Gorilla's instant Coffee 80g",
+      "price": 6300,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507747/simba_contest/product_74010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74011,
+      "name": "Gorilla's Roasted Coffee Beans 340g",
+      "price": 8900,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507747/simba_contest/product_74011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 74012,
+      "name": "Yes Rwandan Coffee powder 500g",
+      "price": 10400,
+      "category": "Beverages",
+      "subcategoryId": 74,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507747/simba_contest/product_74012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76001,
+      "name": "American Garden Chocolate Syurp 680g",
+      "price": 11200,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507748/simba_contest/product_76001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76002,
+      "name": "American Garden Pancake Syrup 710ml",
+      "price": 10000,
+      "category": "Bakery",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507748/simba_contest/product_76002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76003,
+      "name": "Herman Chocolate syurp 680g",
+      "price": 6186,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507747/simba_contest/product_76003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76004,
+      "name": "Herman Strawberry Syrup 680g",
+      "price": 7100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507748/simba_contest/product_76004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76005,
+      "name": "HermanPancae Syrup 709ml",
+      "price": 6300,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507748/simba_contest/product_76005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76006,
+      "name": "Peptang Golden Syrup 500g",
+      "price": 4400,
+      "category": "General",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507748/simba_contest/product_76006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 76007,
+      "name": "Super Chef Strawbeery Syurp 624g",
+      "price": 4900,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 76,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507749/simba_contest/product_76007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77001,
+      "name": "Boni Dried Dates 400g",
+      "price": 5500,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507749/simba_contest/product_77001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77002,
+      "name": "Boni Selection Pop corn 500g",
+      "price": 4000,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507749/simba_contest/product_77002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77003,
+      "name": "Dateland Pitted Dates 400g",
+      "price": 5100,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507749/simba_contest/product_77003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77004,
+      "name": "Dateland Pitted Dates 800g",
+      "price": 9800,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507750/simba_contest/product_77004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77005,
+      "name": "Everyday Salted Peanuts 250G 19864",
+      "price": 3200,
+      "category": "Baking & Pantry",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507750/simba_contest/product_77005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77006,
+      "name": "Master Farm classic mied Nuts 180g",
+      "price": 5800,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507750/simba_contest/product_77006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77007,
+      "name": "Master Farm cranbery 200g",
+      "price": 8500,
+      "category": "General",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507750/simba_contest/product_77007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77008,
+      "name": "Master Farm Dates 200g",
+      "price": 9400,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507750/simba_contest/product_77008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77009,
+      "name": "Master Farm Raisins 200g",
+      "price": 6300,
+      "category": "General",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507751/simba_contest/product_77009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77010,
+      "name": "Master Farm Raw Almonds 160g",
+      "price": 8000,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_77010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77011,
+      "name": "Master Farm Raw Cashew Kernels 200g",
+      "price": 9900,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_77011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77012,
+      "name": "Master Farm Roasted Cashew Kernels 200g",
+      "price": 11600,
+      "category": "Snacks & Sweets",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_77012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 77013,
+      "name": "Tropical Heat Roasted Salted Peanut 50g",
+      "price": 700,
+      "category": "Baking & Pantry",
+      "subcategoryId": 77,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_77013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 97001,
+      "name": "Bamboo Toothpicks 25SL06Y-269",
+      "price": 1800,
+      "category": "General",
+      "subcategoryId": 97,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_97001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 97002,
+      "name": "Wood Color Tooth Picks 25SL06Y-295",
+      "price": 1600,
+      "category": "General",
+      "subcategoryId": 97,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_97002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 97003,
+      "name": "Wood Toothpicks 300pcs 25SL06Y-300",
+      "price": 1700,
+      "category": "General",
+      "subcategoryId": 97,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507752/simba_contest/product_97003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98001,
+      "name": "Always Maxi Thick 7pcs Extra Long",
+      "price": 1400,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507753/simba_contest/product_98001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98002,
+      "name": "Belle France Protection Normal 12pc",
+      "price": 6400,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507753/simba_contest/product_98002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98003,
+      "name": "Belle France Tampons Normal 20pcs",
+      "price": 8600,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507753/simba_contest/product_98003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98004,
+      "name": "Belle France Tampons Super Aplica 20Pcs",
+      "price": 9300,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507754/simba_contest/product_98004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98005,
+      "name": "Belle France Ultra Soft Pads 14Pcs",
+      "price": 4600,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507754/simba_contest/product_98005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98006,
+      "name": "Boni Selection Pantyliner 60pcs 16114",
+      "price": 4500,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507754/simba_contest/product_98006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98007,
+      "name": "Boni Selection Sanitary Towel max night 8 pcs",
+      "price": 6900,
+      "category": "Paper & Disposables",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507754/simba_contest/product_98007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98008,
+      "name": "Label Ladypads Ultra x10 night",
+      "price": 5300,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507755/simba_contest/product_98008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98009,
+      "name": "Labell Protection Slip 12pcs Super",
+      "price": 6200,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507754/simba_contest/product_98009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98010,
+      "name": "Labell sanitary Pads 18pcs normal",
+      "price": 5000,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507754/simba_contest/product_98010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98011,
+      "name": "Labell Tampoon Compact mini",
+      "price": 7100,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507756/simba_contest/product_98011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98012,
+      "name": "Labell Tampoon Compact normal",
+      "price": 7500,
+      "category": "General",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507756/simba_contest/product_98012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 98013,
+      "name": "Medicott sanitary Towel 10pcs",
+      "price": 1356,
+      "category": "Paper & Disposables",
+      "subcategoryId": 98,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507756/simba_contest/product_98013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99001,
+      "name": "Baby Steps Diaper L 9-18 KG",
+      "price": 3500,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507756/simba_contest/product_99001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99002,
+      "name": "Baby Steps Diaper M 5-10KG",
+      "price": 3500,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507757/simba_contest/product_99002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99003,
+      "name": "Baby Steps Diaper S 3-6KG",
+      "price": 15600,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507757/simba_contest/product_99003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99004,
+      "name": "Baby Steps Diaper S 3-6KG",
+      "price": 3500,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507757/simba_contest/product_99004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99005,
+      "name": "Baby Steps DiaperXL 13-25KG",
+      "price": 3500,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507757/simba_contest/product_99005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99006,
+      "name": "Evy Baby Jambo NO 2 Mini 80diapers",
+      "price": 25700,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507757/simba_contest/product_99006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99007,
+      "name": "EVY BABY DIAPERS 2 mini 3-6kg 32pcs",
+      "price": 10900,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507757/simba_contest/product_99007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99008,
+      "name": "EVY BABY DIAPERS 3 midi 5-9kg 24pcs",
+      "price": 10900,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507758/simba_contest/product_99008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99009,
+      "name": "Evy Baby Diapers 3 midi 5-9kg 24pcs",
+      "price": 10900,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507758/simba_contest/product_99009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99010,
+      "name": "EVY BABY DIAPERS 3 midi 5-9kg 64pcs",
+      "price": 25700,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507758/simba_contest/product_99010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99011,
+      "name": "EVY BABY DIAPERS 4 maxii 7-18kg 58pcs",
+      "price": 25700,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507759/simba_contest/product_99011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 99012,
+      "name": "EVY BABY DIAPERS 5 junior 11-25kg 46pcs",
+      "price": 25700,
+      "category": "Baby Products",
+      "subcategoryId": 99,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507759/simba_contest/product_99012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103001,
+      "name": "Boni Selection Floor-Cloth Nat. 60X70 3P",
+      "price": 10500,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507759/simba_contest/product_103001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103002,
+      "name": "Boni Selection Microfiber Cloth 5 pcs",
+      "price": 5800,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507759/simba_contest/product_103002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103003,
+      "name": "Everyday Orange Cloths 60X70Cm 5Pcs",
+      "price": 13500,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507759/simba_contest/product_103003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103004,
+      "name": "Everyday Sponges 10pcs",
+      "price": 2200,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507760/simba_contest/product_103004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103005,
+      "name": "Fangacao Cleaning Cloth 5 pcs 1G1158",
+      "price": 3700,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507760/simba_contest/product_103005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103006,
+      "name": "Fangcao Shower Towel 2G5031",
+      "price": 2000,
+      "category": "Paper & Disposables",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507760/simba_contest/product_103006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103007,
+      "name": "Fiber Cloth 10pcs LS-0720",
+      "price": 6700,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507762/simba_contest/product_103007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103008,
+      "name": "Lisa Multi Use Cloth Ls-0733",
+      "price": 4200,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507762/simba_contest/product_103008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103009,
+      "name": "Lisa Sponge 8pcs Bag LS-0799",
+      "price": 3500,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507762/simba_contest/product_103009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103010,
+      "name": "Ultra Clean Scouring Pad 12 pack",
+      "price": 5000,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507762/simba_contest/product_103010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103011,
+      "name": "Ultra Clean Scouring Pad 90 mm*150mm",
+      "price": 1400,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507762/simba_contest/product_103011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 103012,
+      "name": "zhongyi colored shower ball zy-2446",
+      "price": 3500,
+      "category": "General",
+      "subcategoryId": 103,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507763/simba_contest/product_103012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 105001,
+      "name": "Ace Toilet Cleaner 1L Ocean",
+      "price": 3800,
+      "category": "Cooking Essentials",
+      "subcategoryId": 105,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507763/simba_contest/product_105001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 105002,
+      "name": "Ace Toilet Cleaner 1L Power Max",
+      "price": 3800,
+      "category": "Cooking Essentials",
+      "subcategoryId": 105,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507763/simba_contest/product_105002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 105003,
+      "name": "Alba Scouring Powder 1Kg",
+      "price": 4900,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 105,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507763/simba_contest/product_105003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 105004,
+      "name": "Axion Antibacterial Dishwashing Lemon 190g",
+      "price": 1900,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 105,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507763/simba_contest/product_105004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 105005,
+      "name": "Axion Dishwashing Lemon 750g",
+      "price": 6400,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 105,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507765/simba_contest/product_105005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131001,
+      "name": "Boni Selection Acacia Honey 350g 16156",
+      "price": 5900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507764/simba_contest/product_131001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131002,
+      "name": "Boni Selection Flower Honey 350g 16902",
+      "price": 5700,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507764/simba_contest/product_131002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131003,
+      "name": "C&P Pure Honey 500g",
+      "price": 6300,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507765/simba_contest/product_131003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131004,
+      "name": "Mila Honey 500g",
+      "price": 9500,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507765/simba_contest/product_131004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131005,
+      "name": "Mila Squeezed Honey 350g",
+      "price": 7800,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507767/simba_contest/product_131005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131006,
+      "name": "Nikezz Honey First Honey 1Kg",
+      "price": 9500,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507766/simba_contest/product_131006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131007,
+      "name": "Njc Natural Honey 1kg",
+      "price": 9900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507767/simba_contest/product_131007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131008,
+      "name": "Njc Natural Honey 350g",
+      "price": 4900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507766/simba_contest/product_131008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131009,
+      "name": "Njc Natural Honey 500g",
+      "price": 5600,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507767/simba_contest/product_131009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131010,
+      "name": "Sozo Honey 1kg",
+      "price": 9800,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507768/simba_contest/product_131010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131011,
+      "name": "Sozo Honey 350g",
+      "price": 5000,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507768/simba_contest/product_131011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131012,
+      "name": "Sozo Honey 500g",
+      "price": 5900,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507768/simba_contest/product_131012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131013,
+      "name": "UBUKI BW'IWACU HONEY 300g",
+      "price": 4600,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507768/simba_contest/product_131013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131014,
+      "name": "Uburanga Honey Jar 1kg",
+      "price": 11700,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507768/simba_contest/product_131014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131015,
+      "name": "Uburanga White Honey Jar 1000g",
+      "price": 17600,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507769/simba_contest/product_131015.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131016,
+      "name": "Uburanga White Honey Jar 500g",
+      "price": 10400,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507769/simba_contest/product_131016.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 131017,
+      "name": "Zesta Pure Natural Honey 500g",
+      "price": 6300,
+      "category": "Sauces & Spreads",
+      "subcategoryId": 131,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507769/simba_contest/product_131017.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 148001,
+      "name": "Nova Ceramic Steam Iron Ni-1168(1163)Crms",
+      "price": 56000,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 148,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507770/simba_contest/product_148001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 148002,
+      "name": "Nova Dry & Steam Iron Ni-1152",
+      "price": 44700,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 148,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507770/simba_contest/product_148002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 165001,
+      "name": "Mocha coffee Pot 100ml Lt30-100",
+      "price": 25000,
+      "category": "Beverages",
+      "subcategoryId": 165,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507770/simba_contest/product_165001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 165002,
+      "name": "Mocha coffee Pot 600ml Lt30-600",
+      "price": 48000,
+      "category": "Beverages",
+      "subcategoryId": 165,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507771/simba_contest/product_165002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 166001,
+      "name": "Herevin Storage Canister 1.1L 161214-560",
+      "price": 4300,
+      "category": "General",
+      "subcategoryId": 166,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507772/simba_contest/product_166001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 167001,
+      "name": "Coffee Cup 160z STPP013",
+      "price": 11000,
+      "category": "Paper & Disposables",
+      "subcategoryId": 167,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507771/simba_contest/product_167001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168001,
+      "name": "Casino Water Bottel 100ml kxn-1258",
+      "price": 10500,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507771/simba_contest/product_168001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168002,
+      "name": "casino water bottel 500ml qf-8006",
+      "price": 4500,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507771/simba_contest/product_168002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168003,
+      "name": "Casino Water Bottle 1500ml Kxn-1077",
+      "price": 7400,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507773/simba_contest/product_168003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168004,
+      "name": "Fuguang Water Bottle 2000ml KAS-191001",
+      "price": 8400,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507772/simba_contest/product_168004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168005,
+      "name": "Herevin Water Bottle 1L Pink 161546-161",
+      "price": 4800,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507773/simba_contest/product_168005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168006,
+      "name": "Herevin Water Bottle 1L Softpink161646-162",
+      "price": 5500,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507773/simba_contest/product_168006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168007,
+      "name": "Herevin Water Bottle 750ml 161670-063",
+      "price": 5300,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507773/simba_contest/product_168007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168008,
+      "name": "Herevin Water Bottle 750ml 161670-070",
+      "price": 5300,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507774/simba_contest/product_168008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 168009,
+      "name": "Herevin Water Bottle 750ml Calif 161670-076",
+      "price": 5300,
+      "category": "General",
+      "subcategoryId": 168,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507774/simba_contest/product_168009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 176001,
+      "name": "Cleaning Brush 23SL11N-144",
+      "price": 3220,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 176,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507776/simba_contest/product_176001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 176002,
+      "name": "Large Double Color Silk Bed Brush BYW--152",
+      "price": 3400,
+      "category": "Cleaning & Sanitary",
+      "subcategoryId": 176,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507775/simba_contest/product_176002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 176003,
+      "name": "Yirong Coaten Mop 38cm yr-8083",
+      "price": 18000,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 176,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507774/simba_contest/product_176003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 176004,
+      "name": "Yirong Rubber Cotton Towers YR-8089A",
+      "price": 20200,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 176,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507774/simba_contest/product_176004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 176005,
+      "name": "Yirong Toilet Brush Yr-9151",
+      "price": 3700,
+      "category": "Cooking Essentials",
+      "subcategoryId": 176,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507777/simba_contest/product_176005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 177001,
+      "name": "Cevre Toilet brush 5145-C",
+      "price": 3250,
+      "category": "Cooking Essentials",
+      "subcategoryId": 177,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507775/simba_contest/product_177001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 187001,
+      "name": "Boni Selection Straw Paper 140pcs white",
+      "price": 9900,
+      "category": "Paper & Disposables",
+      "subcategoryId": 187,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507776/simba_contest/product_187001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 187002,
+      "name": "ST Aluminium Foil 45cm STAP007",
+      "price": 32500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 187,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507776/simba_contest/product_187002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 187003,
+      "name": "Super Touch Cappuccino Cups 16oz STPP020",
+      "price": 8500,
+      "category": "Paper & Disposables",
+      "subcategoryId": 187,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507776/simba_contest/product_187003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 195001,
+      "name": "Domedia Frying Pan 24cm",
+      "price": 30085,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 195,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507777/simba_contest/product_195001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 195002,
+      "name": "Schafer Frying Pan Silver 24cm",
+      "price": 30085,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 195,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507777/simba_contest/product_195002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 195003,
+      "name": "Schafer Frying Pan wood 24cm",
+      "price": 33475,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 195,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507777/simba_contest/product_195003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 197001,
+      "name": "Simba SS Fruit Knife 24SL07P-912",
+      "price": 2400,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 197,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_197001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 198001,
+      "name": "Simba Soup Spoon 24SL07P-966",
+      "price": 4000,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 198,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_198001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 198002,
+      "name": "Simba SS Shovel 24SL07P-869",
+      "price": 3400,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 198,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_198002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199001,
+      "name": "Cristal Darques LongChamp Set Glass V7384",
+      "price": 29000,
+      "category": "General",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507779/simba_contest/product_199001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199002,
+      "name": "Unbreakable Pc Cup 130ml jd6614",
+      "price": 2100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_199002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199003,
+      "name": "Unbreakable Pc Cup 130ml jd6623",
+      "price": 2100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_199003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199004,
+      "name": "Unbreakable Pc Cup 220ml jd6617",
+      "price": 2400,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_199004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199005,
+      "name": "Unbreakable Pc Cup 265ml jd6611",
+      "price": 2500,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507778/simba_contest/product_199005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199006,
+      "name": "Unbreakable Pc Cup 265ml jd6628",
+      "price": 3400,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507779/simba_contest/product_199006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199007,
+      "name": "Unbreakable Pc Cup 280ml jd6625",
+      "price": 2000,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507779/simba_contest/product_199007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199008,
+      "name": "Unbreakable Pc Cup 390ml jd6602",
+      "price": 4900,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507779/simba_contest/product_199008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199009,
+      "name": "Unbreakable Pc Cup 400ml jd6630",
+      "price": 3400,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507779/simba_contest/product_199009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199010,
+      "name": "Unbreakable Pc Cup 60ml jd6607",
+      "price": 2100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507780/simba_contest/product_199010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199011,
+      "name": "Unbreakable Pc Cup 665ml jd6632",
+      "price": 5100,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507780/simba_contest/product_199011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199012,
+      "name": "Unbreakable Pc Cup 70ml jd6619",
+      "price": 1600,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507780/simba_contest/product_199012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 199013,
+      "name": "Unbreakable Pc Cup 80ml jd6621",
+      "price": 2900,
+      "category": "Paper & Disposables",
+      "subcategoryId": 199,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507781/simba_contest/product_199013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204001,
+      "name": "ARKO nem 150ml",
+      "price": 3800,
+      "category": "General",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507781/simba_contest/product_204001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204002,
+      "name": "Babaria Body Milk Aloe 400ml",
+      "price": 7500,
+      "category": "Dairy & Eggs",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507781/simba_contest/product_204002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204003,
+      "name": "Dove Shampoo 680ml Daily Shine",
+      "price": 13900,
+      "category": "Personal Care",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507781/simba_contest/product_204003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204004,
+      "name": "Dove Shampoo 680ml Intense Repair",
+      "price": 13900,
+      "category": "Personal Care",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507782/simba_contest/product_204004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204005,
+      "name": "Dove Shampoo 680ml Nourishing",
+      "price": 13900,
+      "category": "Personal Care",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507781/simba_contest/product_204005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204006,
+      "name": "Dove Shampoo 680ml Sraight & silky",
+      "price": 13900,
+      "category": "Personal Care",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507782/simba_contest/product_204006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204007,
+      "name": "Garnier Fructis Conditioner 300ml",
+      "price": 12300,
+      "category": "General",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507782/simba_contest/product_204007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204008,
+      "name": "Gliss HAIR Repaire 200ml",
+      "price": 11900,
+      "category": "General",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507783/simba_contest/product_204008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 204009,
+      "name": "Head And Shoulders Shampoo 250ml",
+      "price": 8000,
+      "category": "Personal Care",
+      "subcategoryId": 204,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507783/simba_contest/product_204009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 205001,
+      "name": "Amalfi Moisturing cream 150ml",
+      "price": 2200,
+      "category": "Personal Care",
+      "subcategoryId": 205,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507783/simba_contest/product_205001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 205002,
+      "name": "Arco Men cream coconut cream 250ml",
+      "price": 4700,
+      "category": "Personal Care",
+      "subcategoryId": 205,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507785/simba_contest/product_205002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 205003,
+      "name": "Arko Men Cream 150ml Avocado",
+      "price": 3100,
+      "category": "Personal Care",
+      "subcategoryId": 205,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507784/simba_contest/product_205003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 205004,
+      "name": "Arko Men Cream 250ml Avocado oil",
+      "price": 3600,
+      "category": "Cooking Essentials",
+      "subcategoryId": 205,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507784/simba_contest/product_205004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 208001,
+      "name": "Gilette Fusion Proglide 2 Blades",
+      "price": 17500,
+      "category": "General",
+      "subcategoryId": 208,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507784/simba_contest/product_208001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 208002,
+      "name": "Label Aftershave 100ml Sport",
+      "price": 5400,
+      "category": "Personal Care",
+      "subcategoryId": 208,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507784/simba_contest/product_208002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 208003,
+      "name": "Label Aftershave 100ml Tonic",
+      "price": 5300,
+      "category": "Personal Care",
+      "subcategoryId": 208,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507784/simba_contest/product_208003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 208004,
+      "name": "Labell Shaving Foam 250ml Normal",
+      "price": 5700,
+      "category": "General",
+      "subcategoryId": 208,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507785/simba_contest/product_208004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 208005,
+      "name": "Nivea Men After shave 100ml",
+      "price": 16500,
+      "category": "Personal Care",
+      "subcategoryId": 208,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507786/simba_contest/product_208005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 208006,
+      "name": "Nivea Men After shave 100ml fresh kick",
+      "price": 16500,
+      "category": "Personal Care",
+      "subcategoryId": 208,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507786/simba_contest/product_208006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211001,
+      "name": "Belle France Styling Gel 150ml",
+      "price": 4500,
+      "category": "Personal Care",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507786/simba_contest/product_211001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211002,
+      "name": "Glosheen Hair style gel 125ml",
+      "price": 9300,
+      "category": "Personal Care",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507787/simba_contest/product_211002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211003,
+      "name": "Kentaste Coconut Oil 700ml",
+      "price": 15500,
+      "category": "Cooking Essentials",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507787/simba_contest/product_211003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211004,
+      "name": "Labell Hair Spray 300ml extra strong",
+      "price": 6600,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507786/simba_contest/product_211004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211005,
+      "name": "Labell Hair Spray 300ml Normal",
+      "price": 6400,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507787/simba_contest/product_211005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211006,
+      "name": "Labell Hair Spray extra strong 250ml",
+      "price": 5700,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507811/simba_contest/product_211006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211007,
+      "name": "more up Sheen Spray 500ml",
+      "price": 4000,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507787/simba_contest/product_211007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211008,
+      "name": "Moreup Hair food 475ml Olive",
+      "price": 4200,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507788/simba_contest/product_211008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211009,
+      "name": "Venus Fortify Hair Food 210ml",
+      "price": 3600,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507788/simba_contest/product_211009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211010,
+      "name": "Venus Fortify hair food 400ml",
+      "price": 5900,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507788/simba_contest/product_211010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 211011,
+      "name": "Venus Hair Food Anti dandruff 210ml",
+      "price": 3000,
+      "category": "General",
+      "subcategoryId": 211,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507788/simba_contest/product_211011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 214001,
+      "name": "Atopic Body Lotion 300ml",
+      "price": 14100,
+      "category": "Personal Care",
+      "subcategoryId": 214,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507788/simba_contest/product_214001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 214002,
+      "name": "Imperial Body Active Lotion 400ml",
+      "price": 5000,
+      "category": "Personal Care",
+      "subcategoryId": 214,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507788/simba_contest/product_214002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 214003,
+      "name": "Imperial Body Japanese Lotion 400ml",
+      "price": 5000,
+      "category": "Personal Care",
+      "subcategoryId": 214,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507789/simba_contest/product_214003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 214004,
+      "name": "Imperial Leather Men Cool Lotion 400ml",
+      "price": 5000,
+      "category": "Personal Care",
+      "subcategoryId": 214,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507789/simba_contest/product_214004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 214005,
+      "name": "Johnson baby lotion 500ml",
+      "price": 13000,
+      "category": "Personal Care",
+      "subcategoryId": 214,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507789/simba_contest/product_214005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 215001,
+      "name": "Geepas Extension 5 Socket 5M GES5802",
+      "price": 30000,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 215,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507790/simba_contest/product_215001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 215002,
+      "name": "Simba VDE plug Adapter Sim-86",
+      "price": 3100,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 215,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507790/simba_contest/product_215002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 215003,
+      "name": "SImba Extention Socket 5 way MTS-G251U",
+      "price": 17900,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 215,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507790/simba_contest/product_215003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 220001,
+      "name": "Lentz electric kettle 1.7L 74158",
+      "price": 59500,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 220,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507791/simba_contest/product_220001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 220002,
+      "name": "Sutai Electric Kettle 24SL11H-375",
+      "price": 23300,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 220,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507790/simba_contest/product_220002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234001,
+      "name": "Belle France whisky 700ml",
+      "price": 18800,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507790/simba_contest/product_234001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234002,
+      "name": "Black Label 1L Whisky",
+      "price": 72000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507791/simba_contest/product_234002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234003,
+      "name": "Bond 7 Whisky 200ml",
+      "price": 3100,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507791/simba_contest/product_234003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234004,
+      "name": "Bond 7 Whisky 750ml",
+      "price": 10200,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507791/simba_contest/product_234004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234005,
+      "name": "Captain morgan spiced gold 1L",
+      "price": 30000,
+      "category": "Spices & Seasoning",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507792/simba_contest/product_234005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234006,
+      "name": "Double Black Label 1L",
+      "price": 95000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507792/simba_contest/product_234006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234007,
+      "name": "Everyday Scotch Whisky 40 % Vol 70Cl 13826",
+      "price": 14500,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507792/simba_contest/product_234007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234008,
+      "name": "Jack Daniels Fire Whiskey 1L",
+      "price": 82000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507792/simba_contest/product_234008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234009,
+      "name": "Jack daniel's 1L",
+      "price": 80000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507793/simba_contest/product_234009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234010,
+      "name": "Jack Daniels Apple Whiskey 1L",
+      "price": 82000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507793/simba_contest/product_234010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234011,
+      "name": "Jack Daniels Whiskey Genteman 700ml",
+      "price": 86000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507793/simba_contest/product_234011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234012,
+      "name": "Naked Malt Whiskey 70cl",
+      "price": 47000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507793/simba_contest/product_234012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234013,
+      "name": "Red label Johnnie Walker 1lt",
+      "price": 31000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507794/simba_contest/product_234013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234014,
+      "name": "Tabay Triple Sec 1L",
+      "price": 27800,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507794/simba_contest/product_234014.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234015,
+      "name": "The Famous Grouse Scoth Whisky 1.14L",
+      "price": 33000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507794/simba_contest/product_234015.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234016,
+      "name": "The Famous Grouse Smoky Black 1L",
+      "price": 40000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507794/simba_contest/product_234016.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234017,
+      "name": "The Famous Grouse Whisky 350ml",
+      "price": 18000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507794/simba_contest/product_234017.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234018,
+      "name": "The Famouse Grouse Wisky 1L",
+      "price": 31000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507795/simba_contest/product_234018.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234019,
+      "name": "The Macallan 18yr Double CaskWhiskey 700ml",
+      "price": 750000,
+      "category": "General",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507795/simba_contest/product_234019.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 234020,
+      "name": "The Singleton Scotch Whisky 750ml",
+      "price": 64000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 234,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507795/simba_contest/product_234020.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235001,
+      "name": "Amstel 100% Pure Malt 330ml",
+      "price": 1300,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507795/simba_contest/product_235001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235002,
+      "name": "Corona Extra Beer 330ml",
+      "price": 2700,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507796/simba_contest/product_235002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235003,
+      "name": "Guinness Foreing Extra Beer 500ml",
+      "price": 2700,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507796/simba_contest/product_235003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235004,
+      "name": "Heineken premium beer 330ml",
+      "price": 1500,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507796/simba_contest/product_235004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235005,
+      "name": "Leffe Beer Blond 330ml",
+      "price": 3700,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507796/simba_contest/product_235005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235006,
+      "name": "leffe Blonde beer 50cle",
+      "price": 11000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507796/simba_contest/product_235006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235007,
+      "name": "LEGEND beer EXTRA STOUT 30cl",
+      "price": 1300,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507799/simba_contest/product_235007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235008,
+      "name": "Miitzig 33cl beer",
+      "price": 1100,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507797/simba_contest/product_235008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235009,
+      "name": "Miitzig Beer 50cl",
+      "price": 1450,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507797/simba_contest/product_235009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235010,
+      "name": "Miitzig Lager Beer 65cl",
+      "price": 2100,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507799/simba_contest/product_235010.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235011,
+      "name": "Panache Lemon 330ml",
+      "price": 800,
+      "category": "Electronics & Kitchenware",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507798/simba_contest/product_235011.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235012,
+      "name": "Savanna dry premium cider 330ml",
+      "price": 3600,
+      "category": "General",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507798/simba_contest/product_235012.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 235013,
+      "name": "Skol Malt 65cl",
+      "price": 2000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 235,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507798/simba_contest/product_235013.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236001,
+      "name": "Amarula Gin 750ml",
+      "price": 48900,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507798/simba_contest/product_236001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236002,
+      "name": "Beefeater Dry Gin 1L",
+      "price": 48000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507799/simba_contest/product_236002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236003,
+      "name": "BullDog London Dry Gin 70Cl",
+      "price": 70000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507799/simba_contest/product_236003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236004,
+      "name": "Dagger Gin 1L",
+      "price": 17700,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507800/simba_contest/product_236004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236005,
+      "name": "Everyday London Dry Gin 38% Vol 70Cl 18754",
+      "price": 9000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507800/simba_contest/product_236005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236006,
+      "name": "Gilbey's Dry Gin 200ml",
+      "price": 3500,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507802/simba_contest/product_236006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236007,
+      "name": "Gordon's London Dry Gin 1lit",
+      "price": 28500,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507802/simba_contest/product_236007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 236008,
+      "name": "Grands Domaines Organic Gin 700ml",
+      "price": 64000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 236,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507802/simba_contest/product_236008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237001,
+      "name": "Carmela Sparkling Wine 75cl",
+      "price": 20900,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507803/simba_contest/product_237001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237002,
+      "name": "Chamdor wine grape white 750ml",
+      "price": 14900,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507803/simba_contest/product_237002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237003,
+      "name": "CINZANO Sparkling Champagne 75cL",
+      "price": 27500,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507803/simba_contest/product_237003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237004,
+      "name": "Duc De Lucey Brut Rose 750ml",
+      "price": 28000,
+      "category": "General",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507802/simba_contest/product_237004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237005,
+      "name": "Eva Sparkling Peach 750ml NA Champagne",
+      "price": 7800,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507803/simba_contest/product_237005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237006,
+      "name": "Eva Sparkling pinapple 750ml NA Champagne",
+      "price": 7800,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507803/simba_contest/product_237006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237007,
+      "name": "Eva Sparkling Red Grape 750ml NA Champagne",
+      "price": 7800,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507804/simba_contest/product_237007.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237008,
+      "name": "Eva Sparkling WhiteGrape 750ml NA Champagne",
+      "price": 7800,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507803/simba_contest/product_237008.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 237009,
+      "name": "Grand Siecle 1812 Champagne 750ml",
+      "price": 340000,
+      "category": "Alcoholic Drinks",
+      "subcategoryId": 237,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507804/simba_contest/product_237009.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673001,
+      "name": "Melvins Sea Salt Herbal mix 500g",
+      "price": 4700,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507893/simba_contest/product_673001.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673002,
+      "name": "Nezo Iodized salt 600g",
+      "price": 2700,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507894/simba_contest/product_673002.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673003,
+      "name": "Poly Gros Salt 1Kg",
+      "price": 2700,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507894/simba_contest/product_673003.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673004,
+      "name": "Super chef Salt 700g",
+      "price": 2500,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507895/simba_contest/product_673004.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673005,
+      "name": "Top Budget salt 750g",
+      "price": 3000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507894/simba_contest/product_673005.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673006,
+      "name": "Vimar Sea Salt 1Kg",
+      "price": 3600,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507895/simba_contest/product_673006.jpg",
+      "unit": "Pcs"
+    },
+    {
+      "id": 673007,
+      "name": "Vimar Sea Salt 500g",
+      "price": 2000,
+      "category": "Baking & Pantry",
+      "subcategoryId": 673,
+      "inStock": true,
+      "image": "https://res.cloudinary.com/eskalate/image/upload/v1776507895/simba_contest/product_673007.jpg",
+      "unit": "Pcs"
+    }
+  ]
+}
