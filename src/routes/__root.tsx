@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { AppProviders } from "@/components/AppProviders";
 
 import appCss from "../styles.css?url";
 
@@ -29,21 +30,20 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-    ],
-    links: [
+      { title: "Simba Supermarket — Rwanda's Online Supermarket" },
       {
-        rel: "stylesheet",
-        href: appCss,
+        name: "description",
+        content:
+          "Shop groceries, electronics, and daily essentials in Rwanda. Fast delivery in Kigali, Mobile Money checkout, prices in RWF.",
       },
+      { property: "og:title", content: "Simba Supermarket — Rwanda's Online Supermarket" },
+      {
+        property: "og:description",
+        content: "Modern e-commerce for Rwanda. Real products, MoMo checkout, fast delivery.",
+      },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "stylesheet", href: appCss }],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -52,7 +52,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
@@ -65,5 +65,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <AppProviders>
+      <Outlet />
+    </AppProviders>
+  );
 }
