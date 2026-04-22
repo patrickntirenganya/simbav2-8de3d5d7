@@ -2,8 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Zap, ShieldCheck, Truck, ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";
 import { ProductCard } from "@/components/ProductCard";
+import { CategorySidebar } from "@/components/CategorySidebar";
 import { Button } from "@/components/ui/button";
-import { products, categories } from "@/lib/products";
+import { products } from "@/lib/products";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -20,28 +21,24 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const featured = products.slice(0, 8);
-  const topCategories = categories.slice(0, 6);
+  const featured = products.slice(0, 12);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
       <main className="flex-1">
-        {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-orange-700 text-white">
-          <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
+        {/* Hero — Getir-style: solid brand colour band, bold headline, single CTA */}
+        <section className="bg-gradient-to-br from-primary via-primary to-orange-700 text-white">
+          <div className="max-w-7xl mx-auto px-4 py-10 md:py-16 grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6">
-                Freshness
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight mb-4 sm:mb-6">
+                Groceries in
                 <br />
-                Delivered to
-                <br />
-                <span className="text-yellow-300">Your Door.</span>
+                <span className="text-yellow-300">minutes.</span>
               </h1>
-              <p className="text-lg md:text-xl mb-8 text-white/90 max-w-md">
-                Shop Rwanda's best groceries, electronics, and daily essentials with instant MoMo
-                checkout.
+              <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-md">
+                Shop Rwanda's freshest groceries and essentials with instant MoMo checkout.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" variant="secondary" className="font-black">
@@ -62,66 +59,55 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Features */}
-        <section className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-4">
-          {[
-            { icon: Zap, title: "Fast Delivery", desc: "Kigali within 2 hours" },
-            { icon: ShieldCheck, title: "Secure Payment", desc: "MoMo & card supported" },
-            { icon: Truck, title: "Free Shipping", desc: "On all orders today" },
-          ].map((f) => (
-            <div
-              key={f.title}
-              className="flex items-center gap-4 p-5 bg-card rounded-2xl border"
-            >
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                <f.icon className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-bold">{f.title}</h4>
-                <p className="text-xs text-muted-foreground">{f.desc}</p>
-              </div>
-            </div>
-          ))}
-        </section>
+        {/* Main layout — Getir-style: left categories, right content */}
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-8 flex flex-col lg:flex-row gap-4 lg:gap-6">
+          <div className="lg:w-64 lg:flex-shrink-0">
+            <CategorySidebar activeCategory={null} className="lg:sticky lg:top-20" />
+          </div>
 
-        {/* Categories */}
-        <section className="max-w-7xl mx-auto px-4 py-8">
-          <h2 className="text-2xl font-black mb-6">Shop by Category</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-            {topCategories.map((cat) => (
-              <Link
-                key={cat}
-                to="/products"
-                search={{ q: undefined, category: cat }}
-                className="p-4 bg-card border rounded-2xl text-center hover:border-primary hover:shadow-md transition-all"
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-2 flex items-center justify-center text-primary font-black">
-                  {cat[0]}
+          <div className="flex-1 min-w-0 space-y-8">
+            {/* Trust strip */}
+            <section className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                { icon: Zap, title: "Fast Delivery", desc: "Kigali within 2 hours" },
+                { icon: ShieldCheck, title: "Secure Payment", desc: "MoMo & card supported" },
+                { icon: Truck, title: "Free Shipping", desc: "On all orders today" },
+              ].map((f) => (
+                <div
+                  key={f.title}
+                  className="flex items-center gap-3 p-4 bg-card rounded-2xl border"
+                >
+                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                    <f.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm">{f.title}</h4>
+                    <p className="text-xs text-muted-foreground">{f.desc}</p>
+                  </div>
                 </div>
-                <p className="text-xs font-bold truncate">{cat}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
+              ))}
+            </section>
 
-        {/* Featured products */}
-        <section className="max-w-7xl mx-auto px-4 py-8">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-black">Featured Products</h2>
-            <Button asChild variant="ghost">
-              <Link to="/products" search={{ q: undefined, category: undefined }}>
-                View all <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </Button>
+            {/* Featured products */}
+            <section>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-xl sm:text-2xl font-black">Featured Products</h2>
+                <Button asChild variant="ghost" size="sm">
+                  <Link to="/products" search={{ q: undefined, category: undefined }}>
+                    View all <ArrowRight className="w-4 h-4 ml-1" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+                {featured.map((p) => (
+                  <ProductCard key={p.id} product={p} />
+                ))}
+              </div>
+            </section>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {featured.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
-        </section>
+        </div>
 
-        <footer className="border-t mt-12 py-8 text-center text-sm text-muted-foreground">
+        <footer className="border-t mt-8 py-8 text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Simba Supermarket — Kigali, Rwanda
         </footer>
       </main>
