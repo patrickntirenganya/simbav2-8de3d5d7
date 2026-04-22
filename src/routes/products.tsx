@@ -2,8 +2,8 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Header } from "@/components/Header";
 import { ProductCard } from "@/components/ProductCard";
-import { products, categories } from "@/lib/products";
-import { cn } from "@/lib/utils";
+import { CategorySidebar } from "@/components/CategorySidebar";
+import { products } from "@/lib/products";
 import {
   Select,
   SelectContent,
@@ -41,8 +41,6 @@ function ProductsPage() {
   const search = q ?? "";
   const setSearch = (v: string) =>
     navigate({ search: (prev: Search) => ({ ...prev, q: v || undefined }) });
-  const setCategory = (c: string | null) =>
-    navigate({ search: (prev: Search) => ({ ...prev, category: c ?? undefined }) });
 
   const filtered = useMemo(() => {
     return products
@@ -65,35 +63,20 @@ function ProductsPage() {
     <div className="min-h-screen bg-background">
       <Header search={search} setSearch={setSearch} />
 
-      <main className="max-w-7xl mx-auto px-4 py-6 flex flex-col lg:flex-row gap-6">
-        <aside className="lg:w-60 lg:flex-shrink-0">
-          <h2 className="font-black text-xs uppercase tracking-widest mb-4 text-muted-foreground">
-            {t.categories}
-          </h2>
-          <div className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
-            <CategoryButton
-              label={t.allProducts}
-              active={!category}
-              onClick={() => setCategory(null)}
-            />
-            {categories.map((c) => (
-              <CategoryButton
-                key={c}
-                label={c}
-                active={category === c}
-                onClick={() => setCategory(c)}
-              />
-            ))}
-          </div>
-        </aside>
+      <main className="max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-6 flex flex-col lg:flex-row gap-4 lg:gap-6">
+        <div className="lg:w-64 lg:flex-shrink-0">
+          <CategorySidebar activeCategory={category ?? null} className="lg:sticky lg:top-20" />
+        </div>
 
         <section className="flex-1 min-w-0">
           <div className="flex items-center justify-between mb-4 gap-3 flex-wrap">
             <div>
-              <h1 className="text-2xl font-black">
+              <h1 className="text-xl sm:text-2xl font-black">
                 {category ?? t.allProducts}
               </h1>
-              <p className="text-sm text-muted-foreground">{filtered.length} products</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">
+                {filtered.length} products
+              </p>
             </div>
             <Select value={sortBy} onValueChange={(v) => setSortBy(v as typeof sortBy)}>
               <SelectTrigger className="w-44">
@@ -112,7 +95,7 @@ function ProductsPage() {
               No products match your search.
             </div>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
               {filtered.map((p) => (
                 <ProductCard key={p.id} product={p} />
               ))}
@@ -121,29 +104,5 @@ function ProductsPage() {
         </section>
       </main>
     </div>
-  );
-}
-
-function CategoryButton({
-  label,
-  active,
-  onClick,
-}: {
-  label: string;
-  active: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={cn(
-        "flex-shrink-0 lg:w-full text-left px-3 py-2 rounded-xl text-sm font-bold transition-all whitespace-nowrap",
-        active
-          ? "bg-primary text-primary-foreground shadow-md"
-          : "bg-card border hover:border-primary text-foreground",
-      )}
-    >
-      {label}
-    </button>
   );
 }
