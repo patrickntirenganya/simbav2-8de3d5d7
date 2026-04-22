@@ -128,7 +128,6 @@ export function Header({ search = "", setSearch }: HeaderProps) {
             <Button
               size="sm"
               onClick={() => navigate({ to: "/auth", search: { redirect: undefined } })}
-              className="hidden sm:inline-flex"
             >
               {t.signIn}
             </Button>
