@@ -3,7 +3,6 @@ import { Sparkles, Send, X, Loader2, ShoppingBag } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { products } from "@/lib/products";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { formatPrice } from "@/lib/format";
