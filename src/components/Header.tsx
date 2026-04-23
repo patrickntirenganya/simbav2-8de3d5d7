@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { useCart } from "@/contexts/CartContext";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { useAuth } from "@/contexts/AuthContext";
+import { useMyRoles } from "@/hooks/useRoles";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -24,6 +25,7 @@ export function Header({ search = "", setSearch }: HeaderProps) {
   const { lang, t, changeLanguage } = useLanguage();
   const { theme, setTheme } = useTheme();
   const { user, signOut } = useAuth();
+  const { isAdmin, hasStaffAccess } = useMyRoles();
   const navigate = useNavigate();
 
   const handleSearchChange = (v: string) => {
@@ -118,6 +120,18 @@ export function Header({ search = "", setSearch }: HeaderProps) {
                   <Package className="w-4 h-4 mr-2" />
                   {t.orders}
                 </DropdownMenuItem>
+                {hasStaffAccess && (
+                  <DropdownMenuItem onClick={() => navigate({ to: "/staff" })}>
+                    <Package className="w-4 h-4 mr-2" />
+                    Branch dashboard
+                  </DropdownMenuItem>
+                )}
+                {isAdmin && (
+                  <DropdownMenuItem onClick={() => navigate({ to: "/admin" })}>
+                    <Package className="w-4 h-4 mr-2" />
+                    Admin · Roles
+                  </DropdownMenuItem>
+                )}
                 <DropdownMenuItem onClick={signOut}>
                   <LogOut className="w-4 h-4 mr-2" />
                   {t.signOut}
