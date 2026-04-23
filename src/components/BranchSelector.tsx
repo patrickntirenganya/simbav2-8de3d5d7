@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MapPin, Phone, Check, Store } from "lucide-react";
+import { MapPin, Phone, Check, Store, Star } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { cn } from "@/lib/utils";
@@ -10,21 +10,38 @@ interface BranchSelectorProps {
   onChange: (branchId: string) => void;
 }
 
+interface RatingAgg {
+  avg: number;
+  count: number;
+}
+
 export function BranchSelector({ value, onChange }: BranchSelectorProps) {
   const { t } = useLanguage();
   const [branches, setBranches] = useState<Branch[]>([]);
+  const [ratings, setRatings] = useState<Record<string, RatingAgg>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    supabase
-      .from("branches")
-      .select("*")
-      .eq("active", true)
-      .order("name")
-      .then(({ data }) => {
-        setBranches((data as unknown as Branch[]) ?? []);
-        setLoading(false);
+    (async () => {
+      const [{ data: br }, { data: rv }] = await Promise.all([
+        supabase.from("branches").select("*").eq("active", true).order("name"),
+        supabase.from("branch_reviews").select("branch_id, rating"),
+      ]);
+      setBranches((br as unknown as Branch[]) ?? []);
+      const agg: Record<string, { sum: number; count: number }> = {};
+      ((rv as Array<{ branch_id: string; rating: number }>) ?? []).forEach((r) => {
+        const a = agg[r.branch_id] ?? { sum: 0, count: 0 };
+        a.sum += r.rating;
+        a.count += 1;
+        agg[r.branch_id] = a;
       });
+      const out: Record<string, RatingAgg> = {};
+      Object.entries(agg).forEach(([id, v]) => {
+        out[id] = { avg: v.sum / v.count, count: v.count };
+      });
+      setRatings(out);
+      setLoading(false);
+    })();
   }, []);
 
   if (loading) {
