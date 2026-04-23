@@ -66,6 +66,15 @@ export function BranchSelector({ value, onChange }: BranchSelectorProps) {
                       {b.phone}
                     </p>
                   )}
+                  {ratings[b.id] && (
+                    <p className="text-xs flex items-center gap-1 mt-1 font-bold">
+                      <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
+                      {ratings[b.id].avg.toFixed(1)}
+                      <span className="text-muted-foreground font-normal">
+                        ({ratings[b.id].count})
+                      </span>
+                    </p>
+                  )}
                 </div>
                 {active && (
                   <div className="bg-primary text-primary-foreground rounded-full p-1 shrink-0">
