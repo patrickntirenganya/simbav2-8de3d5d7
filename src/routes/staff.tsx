@@ -94,7 +94,7 @@ function StaffPage() {
       .order("created_at", { ascending: false })
       .limit(200);
     if (error) toast.error(error.message);
-    setOrders((data ?? []) as OrderRow[]);
+    setOrders((data ?? []) as unknown as OrderRow[]);
     setLoading(false);
   }, [activeBranchId]);
 
@@ -145,7 +145,7 @@ function StaffPage() {
     );
   }
 
-  const updateOrder = async (id: string, patch: Partial<OrderRow>) => {
+  const updateOrder = async (id: string, patch: Record<string, unknown>) => {
     const { error } = await supabase.from("orders").update(patch).eq("id", id);
     if (error) return toast.error(error.message);
     toast.success("Order updated");
@@ -169,7 +169,7 @@ function StaffPage() {
           .eq("id", inv.id);
       }
     }
-    await updateOrder(o.id, { status: "accepted", accepted_at: new Date().toISOString() } as Partial<OrderRow>);
+    await updateOrder(o.id, { status: "accepted", accepted_at: new Date().toISOString() });
   };
 
   const buckets: Record<string, OrderRow[]> = {
@@ -320,11 +320,11 @@ function StaffPage() {
   );
 }
 
-function statusPatch(s: OrderStatus): Partial<OrderRow> {
+function statusPatch(s: OrderStatus): Record<string, unknown> {
   const now = new Date().toISOString();
-  if (s === "ready") return { status: s, ready_at: now } as Partial<OrderRow>;
-  if (s === "picked_up") return { status: s, picked_up_at: now } as Partial<OrderRow>;
-  return { status: s } as Partial<OrderRow>;
+  if (s === "ready") return { status: s, ready_at: now };
+  if (s === "picked_up") return { status: s, picked_up_at: now };
+  return { status: s };
 }
 
 function Bucket({ title, tone, orders, children }: { title: string; tone: string; orders: OrderRow[]; children: React.ReactNode }) {
