@@ -259,7 +259,7 @@ export function AIAssistant() {
                 </div>
               )}
             </div>
-          </ScrollArea>
+          </div>
 
           <form
             onSubmit={(e) => {
