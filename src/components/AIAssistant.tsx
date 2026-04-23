@@ -184,7 +184,7 @@ export function AIAssistant() {
             </button>
           </div>
 
-          <ScrollArea className="flex-1 p-4" ref={scrollRef as never}>
+          <div ref={scrollRef} className="flex-1 p-4 overflow-y-auto">
             <div className="space-y-3">
               {messages.map((m, i) => {
                 const mentioned = m.role === "assistant" ? findMentionedProducts(m.content) : [];
