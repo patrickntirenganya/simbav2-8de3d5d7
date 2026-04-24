@@ -21,34 +21,54 @@ const CATALOG = products.map((p) => ({
   unit: p.unit,
 }));
 
-const SUGGESTIONS = [
-  "I need breakfast items",
-  "What's good for dinner tonight?",
-  "Show me cheap rice options",
-  "Baby food under 5000 RWF",
-];
-
 const FN_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-assistant`;
 
 export function AIAssistant() {
-  const { lang } = useLanguage();
+  const { lang, t } = useLanguage();
   const [open, setOpen] = React.useState(false);
   const [input, setInput] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [messages, setMessages] = React.useState<Msg[]>([
-    {
-      role: "assistant",
-      content:
-        "Hi! 👋 I'm Simba — your AI shopping assistant. Ask me anything: meal ideas, products, prices, or what's good for breakfast!",
-    },
+    { role: "assistant", content: t.aiGreeting },
   ]);
   const scrollRef = React.useRef<HTMLDivElement>(null);
+
+  // reset greeting when language changes (only if conversation just started)
+  React.useEffect(() => {
+    setMessages((prev) =>
+      prev.length === 1 && prev[0].role === "assistant"
+        ? [{ role: "assistant", content: t.aiGreeting }]
+        : prev,
+    );
+  }, [t.aiGreeting]);
 
   React.useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [messages, loading]);
+
+  const SUGGESTIONS_BY_LANG: Record<string, string[]> = {
+    EN: [
+      "I need breakfast items",
+      "What's good for dinner tonight?",
+      "Show me cheap rice options",
+      "Baby food under 5000 RWF",
+    ],
+    FR: [
+      "J'ai besoin d'articles pour le petit déjeuner",
+      "Que conseilles-tu pour le dîner ?",
+      "Montre-moi du riz pas cher",
+      "Nourriture pour bébé sous 5000 RWF",
+    ],
+    RW: [
+      "Nshaka ibyo gusangira mu gitondo",
+      "Niki cyiza cyo kurira nimugoroba?",
+      "Nereke umuceri uhendutse",
+      "Ibiribwa by'abana munsi ya 5000 RWF",
+    ],
+  };
+  const suggestions = SUGGESTIONS_BY_LANG[lang] ?? SUGGESTIONS_BY_LANG.EN;
 
   const send = async (text: string) => {
     const trimmed = text.trim();
@@ -60,15 +80,16 @@ export function AIAssistant() {
     setLoading(true);
 
     let assistantSoFar = "";
+    let assistantStarted = false;
     const upsert = (chunk: string) => {
       assistantSoFar += chunk;
       setMessages((prev) => {
-        const last = prev[prev.length - 1];
-        if (last?.role === "assistant" && last.content !== messages[messages.length - 1]?.content) {
+        if (assistantStarted) {
           return prev.map((m, i) =>
             i === prev.length - 1 ? { ...m, content: assistantSoFar } : m,
           );
         }
+        assistantStarted = true;
         return [...prev, { role: "assistant", content: assistantSoFar }];
       });
     };
@@ -159,7 +180,7 @@ export function AIAssistant() {
             <Sparkles className="w-5 h-5" />
             <span className="absolute -top-1 -right-1 w-2 h-2 bg-yellow-300 rounded-full animate-pulse" />
           </div>
-          <span className="font-bold text-sm hidden sm:inline">Ask Simba AI</span>
+          <span className="font-bold text-sm hidden sm:inline">{t.askSimba}</span>
         </button>
       )}
 
@@ -172,7 +193,7 @@ export function AIAssistant() {
               </div>
               <div>
                 <p className="font-black text-sm">Simba AI</p>
-                <p className="text-[11px] text-white/80">Your shopping assistant</p>
+                <p className="text-[11px] text-white/80">{t.aiSubtitle}</p>
               </div>
             </div>
             <button
@@ -236,16 +257,16 @@ export function AIAssistant() {
               })}
               {loading && (
                 <div className="flex items-center gap-2 text-muted-foreground text-xs">
-                  <Loader2 className="w-3 h-3 animate-spin" /> thinking...
+                  <Loader2 className="w-3 h-3 animate-spin" /> {t.thinking}
                 </div>
               )}
               {messages.length === 1 && (
                 <div className="pt-2">
                   <p className="text-[11px] font-bold uppercase text-muted-foreground mb-2">
-                    Try asking
+                    {t.tryAsking}
                   </p>
                   <div className="flex flex-col gap-2">
-                    {SUGGESTIONS.map((s) => (
+                    {suggestions.map((s) => (
                       <button
                         key={s}
                         onClick={() => send(s)}
@@ -271,7 +292,7 @@ export function AIAssistant() {
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask anything about products..."
+              placeholder={t.aiPlaceholder}
               disabled={loading}
               className="flex-1"
             />
