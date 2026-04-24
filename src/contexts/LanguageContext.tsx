@@ -594,7 +594,9 @@ const translations = {
     reviewThanks: "Murakoze ku gitekerezo!",
     alreadyReviewed: "Wamaze gutanga amanota.",
   },
-} as const;
+};
+
+type Dict = (typeof translations)["EN"];
 
 // ===== Product translation cache =====
 type ProductTr = { name: string; category: string };
@@ -611,7 +613,7 @@ const categoryCache: Record<Language, Map<string, string>> = {
 
 interface LanguageContextType {
   lang: Language;
-  t: (typeof translations)["EN"];
+  t: Dict;
   changeLanguage: (l: Language) => void;
   trProductName: (id: number, fallback: string) => string;
   trCategory: (cat: string) => string;
@@ -694,7 +696,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     <LanguageContext.Provider
       value={{
         lang,
-        t: translations[lang],
+        t: translations[lang] as Dict,
         changeLanguage,
         trProductName,
         trCategory,
