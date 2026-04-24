@@ -2,3 +2,6 @@ project_id = "mrmmhnfrkeltojempizm"
 
 [functions.ai-assistant]
 verify_jwt = false
+
+[functions.translate-products]
+verify_jwt = true
