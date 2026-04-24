@@ -291,6 +291,27 @@ export type Database = {
         }
         Relationships: []
       }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           branch_id: string | null
@@ -346,6 +367,10 @@ export type Database = {
       seed_branch_inventory: {
         Args: { _product_ids: number[] }
         Returns: number
+      }
+      upsert_branch_inventory: {
+        Args: { _branch_id: string; _product_id: number; _stock: number }
+        Returns: string
       }
       user_branch_id: { Args: { _user_id: string }; Returns: string }
     }
