@@ -123,13 +123,13 @@ export function Header({ search = "", setSearch }: HeaderProps) {
                 {hasStaffAccess && (
                   <DropdownMenuItem onClick={() => navigate({ to: "/staff" })}>
                     <Package className="w-4 h-4 mr-2" />
-                    Branch dashboard
+                    {t.branchDashboard}
                   </DropdownMenuItem>
                 )}
                 {isAdmin && (
                   <DropdownMenuItem onClick={() => navigate({ to: "/admin" })}>
                     <Package className="w-4 h-4 mr-2" />
-                    Admin · Roles
+                    {t.adminRoles}
                   </DropdownMenuItem>
                 )}
                 <DropdownMenuItem onClick={signOut}>

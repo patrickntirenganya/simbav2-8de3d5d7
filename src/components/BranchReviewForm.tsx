@@ -2,6 +2,7 @@ import * as React from "react";
 import { Star, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
@@ -21,6 +22,7 @@ export function BranchReviewForm({
   onSubmitted,
 }: BranchReviewFormProps) {
   const { user } = useAuth();
+  const { t } = useLanguage();
   const [rating, setRating] = React.useState(0);
   const [hover, setHover] = React.useState(0);
   const [comment, setComment] = React.useState("");
@@ -50,7 +52,7 @@ export function BranchReviewForm({
 
   const submit = async () => {
     if (!user || rating === 0) {
-      toast.error("Please select a star rating");
+      toast.error(t.rateThisBranch);
       return;
     }
     setSubmitting(true);
@@ -69,15 +71,15 @@ export function BranchReviewForm({
       toast.error(error.message);
       return;
     }
-    toast.success("Thanks for your review!");
+    toast.success(t.reviewThanks);
     setExisting({ rating, comment: comment.trim() || null });
     onSubmitted?.();
   };
 
   if (loading) {
     return (
-      <div className="text-xs text-muted-foreground flex items-center gap-2">
-        <Loader2 className="w-3 h-3 animate-spin" /> Loading review...
+      <div className="text-xs text-muted-foreground flex items-center gap-2 mt-3">
+        <Loader2 className="w-3 h-3 animate-spin" /> ...
       </div>
     );
   }
@@ -86,11 +88,8 @@ export function BranchReviewForm({
     <div className="border-t pt-4 mt-4 space-y-3">
       <div>
         <p className="font-bold text-sm">
-          {existing ? "Your review" : "Rate your pick-up experience"}
+          {existing ? t.alreadyReviewed : t.rateThisBranch}
           {branchName && <span className="text-muted-foreground"> · {branchName}</span>}
-        </p>
-        <p className="text-xs text-muted-foreground">
-          Help other customers know what to expect.
         </p>
       </div>
       <div className="flex items-center gap-1">
@@ -118,12 +117,12 @@ export function BranchReviewForm({
       <Textarea
         value={comment}
         onChange={(e) => setComment(e.target.value)}
-        placeholder="Tell us how it went (optional)..."
+        placeholder={t.leaveComment}
         rows={2}
         maxLength={500}
       />
       <Button onClick={submit} disabled={submitting || rating === 0} size="sm">
-        {submitting ? "Saving..." : existing ? "Update review" : "Submit review"}
+        {submitting ? t.processing : t.submitReview}
       </Button>
     </div>
   );

@@ -36,19 +36,24 @@ function ProductsPage() {
   const { q, category } = Route.useSearch();
   const navigate = useNavigate({ from: "/products" });
   const [sortBy, setSortBy] = useState<"popularity" | "lowToHigh" | "highToLow">("popularity");
-  const { t } = useLanguage();
+  const { t, trCategory, trProductName } = useLanguage();
 
   const search = q ?? "";
   const setSearch = (v: string) =>
     navigate({ search: (prev: Search) => ({ ...prev, q: v || undefined }) });
 
   const filtered = useMemo(() => {
+    const lower = search.toLowerCase();
     return products
       .filter((p) => {
+        const nameTr = trProductName(p.id, p.name).toLowerCase();
+        const catTr = trCategory(p.category).toLowerCase();
         const ms =
           !search ||
-          p.name.toLowerCase().includes(search.toLowerCase()) ||
-          p.category.toLowerCase().includes(search.toLowerCase());
+          p.name.toLowerCase().includes(lower) ||
+          p.category.toLowerCase().includes(lower) ||
+          nameTr.includes(lower) ||
+          catTr.includes(lower);
         const mc = !category || p.category === category;
         return ms && mc;
       })
@@ -57,7 +62,7 @@ function ProductsPage() {
         if (sortBy === "highToLow") return b.price - a.price;
         return 0;
       });
-  }, [search, category, sortBy]);
+  }, [search, category, sortBy, trProductName, trCategory]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -72,10 +77,10 @@ function ProductsPage() {
           <div className="flex items-center justify-between mb-4 gap-3 flex-wrap">
             <div>
               <h1 className="text-xl sm:text-2xl font-black">
-                {category ?? t.allProducts}
+                {category ? trCategory(category) : t.allProducts}
               </h1>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                {filtered.length} products
+                {filtered.length} {t.productsFound}
               </p>
             </div>
             <Select value={sortBy} onValueChange={(v) => setSortBy(v as typeof sortBy)}>
@@ -92,7 +97,7 @@ function ProductsPage() {
 
           {filtered.length === 0 ? (
             <div className="py-24 text-center text-muted-foreground">
-              No products match your search.
+              {t.noProducts}
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">

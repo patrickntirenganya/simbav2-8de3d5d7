@@ -47,10 +47,14 @@ export const Route = createFileRoute("/products/$id")({
 function ProductDetail() {
   const { product } = Route.useLoaderData();
   const { cart, addToCart, updateQuantity } = useCart();
-  const { t } = useLanguage();
+  const { t, trProductName, trCategory } = useLanguage();
   const cartItem = cart.find((i) => i.id === product.id);
+  const displayName = trProductName(product.id, product.name);
+  const displayCat = trCategory(product.category);
 
-  const related = products.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 4);
+  const related = products
+    .filter((p) => p.category === product.category && p.id !== product.id)
+    .slice(0, 4);
 
   return (
     <div className="min-h-screen bg-background">
@@ -59,21 +63,21 @@ function ProductDetail() {
         <Button asChild variant="ghost" size="sm" className="mb-4">
           <Link to="/products" search={{ q: undefined, category: product.category }}>
             <ArrowLeft className="w-4 h-4 mr-1" />
-            Back
+            {t.backToShop}
           </Link>
         </Button>
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-card rounded-3xl overflow-hidden border aspect-square">
-            <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+            <img src={product.image} alt={displayName} className="w-full h-full object-cover" />
           </div>
 
           <div className="flex flex-col">
             <span className="text-xs font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-1 rounded inline-block w-fit mb-3">
-              {product.category}
+              {displayCat}
             </span>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">{product.name}</h1>
-            <p className="text-sm text-muted-foreground mb-2">Sold per: {product.unit}</p>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">{displayName}</h1>
+            <p className="text-sm text-muted-foreground mb-2">{product.unit}</p>
             <p className="text-4xl font-black text-primary mb-6">{formatPrice(product.price)}</p>
 
             <div className="flex items-center gap-2 mb-6">
@@ -85,15 +89,8 @@ function ProductDetail() {
                 }`}
               >
                 <span className="w-2 h-2 rounded-full bg-current" />
-                {product.inStock ? "In Stock" : "Out of Stock"}
+                {product.inStock ? t.inStock : t.outOfStock}
               </span>
-            </div>
-
-            <div className="bg-muted/50 p-4 rounded-2xl mb-6">
-              <p className="text-sm text-muted-foreground">
-                Real Rwandan supermarket product, sold and shipped from Kigali. Pay on delivery or
-                via Mobile Money at checkout.
-              </p>
             </div>
 
             {cartItem ? (
@@ -113,7 +110,6 @@ function ProductDetail() {
                     <Plus className="w-4 h-4" />
                   </button>
                 </div>
-                <span className="text-sm text-muted-foreground">in your cart</span>
               </div>
             ) : (
               <Button
@@ -122,7 +118,7 @@ function ProductDetail() {
                 disabled={!product.inStock}
                 onClick={() => {
                   addToCart(product);
-                  toast.success(`${product.name} added to cart`);
+                  toast.success(`${displayName} +1`);
                 }}
               >
                 <ShoppingBag className="w-5 h-5 mr-2" />
@@ -134,7 +130,7 @@ function ProductDetail() {
 
         {related.length > 0 && (
           <section className="mt-16">
-            <h2 className="text-2xl font-black mb-6">You may also like</h2>
+            <h2 className="text-2xl font-black mb-6">{t.recommended}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {related.map((p) => (
                 <ProductCard key={p.id} product={p} />

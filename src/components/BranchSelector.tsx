@@ -45,7 +45,7 @@ export function BranchSelector({ value, onChange }: BranchSelectorProps) {
   }, []);
 
   if (loading) {
-    return <div className="text-sm text-muted-foreground">Loading branches...</div>;
+    return <div className="text-sm text-muted-foreground">{t.processing}</div>;
   }
 
   return (

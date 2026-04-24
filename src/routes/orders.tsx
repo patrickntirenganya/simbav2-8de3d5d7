@@ -2,18 +2,20 @@ import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Package, Star } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BranchReviewForm } from "@/components/BranchReviewForm";
 import { formatPrice } from "@/lib/format";
+import { STATUS_LABEL, STATUS_TONE, type OrderStatus } from "@/lib/orderStatus";
 import { cn } from "@/lib/utils";
 
 interface OrderRow {
   id: string;
   total: number;
-  status: string;
+  status: OrderStatus;
   city: string;
   created_at: string;
   branch_id: string | null;
@@ -21,19 +23,7 @@ interface OrderRow {
   items: Array<{ name: string; quantity: number; image: string; price: number }>;
 }
 
-interface BranchRow {
-  id: string;
-  name: string;
-}
-
-const STATUS_COLORS: Record<string, string> = {
-  pending: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400",
-  accepted: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400",
-  preparing: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400",
-  ready: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400",
-  picked_up: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400",
-  cancelled: "bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-400",
-};
+interface BranchRow { id: string; name: string }
 
 export const Route = createFileRoute("/orders")({
   component: OrdersPage,
@@ -42,15 +32,14 @@ export const Route = createFileRoute("/orders")({
 
 function OrdersPage() {
   const { user, loading: authLoading } = useAuth();
+  const { t, lang } = useLanguage();
   const navigate = useNavigate();
   const [orders, setOrders] = useState<OrderRow[]>([]);
   const [branches, setBranches] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!authLoading && !user) {
-      navigate({ to: "/auth", search: { redirect: "/orders" } });
-    }
+    if (!authLoading && !user) navigate({ to: "/auth", search: { redirect: "/orders" } });
   }, [user, authLoading, navigate]);
 
   useEffect(() => {
@@ -63,7 +52,7 @@ function OrdersPage() {
           .order("created_at", { ascending: false }),
         supabase.from("branches").select("id,name"),
       ]);
-      setOrders((ord as OrderRow[]) ?? []);
+      setOrders((ord as unknown as OrderRow[]) ?? []);
       const map: Record<string, string> = {};
       ((br as BranchRow[]) ?? []).forEach((b) => (map[b.id] = b.name));
       setBranches(map);
@@ -77,21 +66,19 @@ function OrdersPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-6">
-        <h1 className="text-3xl font-black mb-6">My Orders</h1>
+        <h1 className="text-3xl font-black mb-6">{t.myOrders}</h1>
 
         {loading ? (
-          <p className="text-muted-foreground">Loading...</p>
+          <p className="text-muted-foreground">...</p>
         ) : orders.length === 0 ? (
           <Card>
             <CardContent className="p-12 text-center">
               <Package className="w-12 h-12 mx-auto text-muted-foreground mb-4" />
-              <p className="font-semibold mb-2">No orders yet</p>
-              <p className="text-sm text-muted-foreground mb-4">
-                Start shopping to see your orders here.
-              </p>
+              <p className="font-semibold mb-2">{t.noOrders}</p>
+              <p className="text-sm text-muted-foreground mb-4">{t.startShoppingDesc}</p>
               <Button asChild>
                 <Link to="/products" search={{ q: undefined, category: undefined }}>
-                  Browse products
+                  {t.browseProducts}
                 </Link>
               </Button>
             </CardContent>
@@ -106,10 +93,10 @@ function OrdersPage() {
                   <CardContent className="p-5">
                     <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
                       <div>
-                        <p className="font-black">Order #{o.id.slice(0, 8)}</p>
+                        <p className="font-black">#{o.id.slice(0, 8)}</p>
                         <p className="text-xs text-muted-foreground">
                           {new Date(o.created_at).toLocaleString()}
-                          {branchName && <> · Pick-up at {branchName}</>}
+                          {branchName && <> · {t.pickupAt} {branchName}</>}
                         </p>
                       </div>
                       <div className="text-right">
@@ -119,10 +106,10 @@ function OrdersPage() {
                         <span
                           className={cn(
                             "text-xs font-bold uppercase tracking-wider px-2 py-1 rounded",
-                            STATUS_COLORS[o.status] ?? "bg-muted text-foreground",
+                            STATUS_TONE[o.status],
                           )}
                         >
-                          {o.status.replace("_", " ")}
+                          {STATUS_LABEL[o.status]?.[lang] ?? o.status}
                         </span>
                       </div>
                     </div>
@@ -152,8 +139,7 @@ function OrdersPage() {
                     )}
                     {!canReview && o.status !== "cancelled" && o.branch_id && (
                       <p className="text-xs text-muted-foreground mt-3 flex items-center gap-1">
-                        <Star className="w-3 h-3" /> You can rate this branch once your order is
-                        picked up.
+                        <Star className="w-3 h-3" /> {t.rateBranchHint}
                       </p>
                     )}
                   </CardContent>
