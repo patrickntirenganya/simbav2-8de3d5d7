@@ -12,14 +12,16 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { cart, addToCart, updateQuantity } = useCart();
-  const { t } = useLanguage();
+  const { t, trProductName, trCategory } = useLanguage();
   const cartItem = cart.find((i) => i.id === product.id);
+  const displayName = trProductName(product.id, product.name);
+  const displayCat = trCategory(product.category);
 
   const handleAdd = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     addToCart(product);
-    toast.success(`${product.name} added to cart`, { id: `add-${product.id}` });
+    toast.success(`${displayName} +1`, { id: `add-${product.id}` });
   };
 
   return (
@@ -32,7 +34,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="relative aspect-square rounded-xl bg-muted mb-3 overflow-hidden">
           <img
             src={product.image}
-            alt={product.name}
+            alt={displayName}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             loading="lazy"
           />
@@ -41,11 +43,11 @@ export function ProductCard({ product }: ProductCardProps) {
 
       <div className="space-y-1 flex-1">
         <span className="text-[9px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded inline-block">
-          {product.category}
+          {displayCat}
         </span>
         <Link to="/products/$id" params={{ id: String(product.id) }}>
           <h3 className="font-bold text-sm leading-tight truncate hover:text-primary transition-colors">
-            {product.name}
+            {displayName}
           </h3>
         </Link>
         <div className="flex items-center justify-between">

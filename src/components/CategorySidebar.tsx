@@ -8,12 +8,8 @@ interface CategorySidebarProps {
   className?: string;
 }
 
-/**
- * Getir-style left vertical category list.
- * Each row: thumbnail image + category name. Active row highlighted in primary.
- */
 export function CategorySidebar({ activeCategory = null, className }: CategorySidebarProps) {
-  const { t } = useLanguage();
+  const { t, trCategory } = useLanguage();
 
   return (
     <aside
@@ -73,7 +69,7 @@ export function CategorySidebar({ activeCategory = null, className }: CategorySi
                   </div>
                 )}
               </div>
-              <span className="truncate leading-tight">{cat}</span>
+              <span className="truncate leading-tight">{trCategory(cat)}</span>
             </Link>
           );
         })}
