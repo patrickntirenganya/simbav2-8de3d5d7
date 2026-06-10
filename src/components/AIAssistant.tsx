@@ -7,19 +7,12 @@ import { products } from "@/lib/products";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { formatPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
+import { supabase } from "@/integrations/supabase/client";
 
 interface Msg {
   role: "user" | "assistant";
   content: string;
 }
-
-const CATALOG = products.map((p) => ({
-  id: p.id,
-  name: p.name,
-  price: p.price,
-  category: p.category,
-  unit: p.unit,
-}));
 
 const FN_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-assistant`;
 
@@ -41,6 +34,19 @@ export function AIAssistant() {
         : prev,
     );
   }, [t.aiGreeting]);
+
+  // Live availability set: product_ids that are in stock in at least one branch.
+  const [inStockIds, setInStockIds] = React.useState<Set<number>>(new Set());
+
+  React.useEffect(() => {
+    supabase
+      .from("branch_inventory")
+      .select("product_id")
+      .gt("stock", 0)
+      .then(({ data }) => {
+        if (data) setInStockIds(new Set(data.map((r) => r.product_id as number)));
+      });
+  }, []);
 
   React.useEffect(() => {
     if (scrollRef.current) {
@@ -103,7 +109,14 @@ export function AIAssistant() {
         },
         body: JSON.stringify({
           messages: next.map((m) => ({ role: m.role, content: m.content })),
-          catalog: CATALOG,
+          catalog: products.map((p) => ({
+            id: p.id,
+            name: p.name,
+            price: p.price,
+            category: p.category,
+            unit: p.unit,
+            in_stock: inStockIds.size === 0 ? true : inStockIds.has(p.id),
+          })),
           lang,
         }),
       });

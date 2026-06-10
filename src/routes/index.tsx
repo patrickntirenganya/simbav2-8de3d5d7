@@ -207,9 +207,6 @@ function HomePage() {
           </div>
         </section>
 
-        <footer className="border-t py-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Simba Supermarket — {t.location}
-        </footer>
       </main>
     </div>
   );

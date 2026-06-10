@@ -19,6 +19,7 @@ interface CatalogItem {
   price: number;
   category: string;
   unit: string;
+  in_stock?: boolean;
 }
 
 Deno.serve(async (req) => {
@@ -36,27 +37,29 @@ Deno.serve(async (req) => {
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY not configured");
 
-    // Trim catalog to keep context tight & cheap (top 250 items, compact form)
-    const trimmed = (catalog ?? []).slice(0, 250);
-    const catalogText = trimmed
-      .map((p) => `${p.id}|${p.name}|${p.category}|${p.price}RWF|${p.unit}`)
+    // Send the FULL catalog — Simba AI has access to every product.
+    const full = catalog ?? [];
+    const inStockCount = full.filter((p) => p.in_stock !== false).length;
+    const catalogText = full
+      .map((p) => `${p.id}|${p.name}|${p.category}|${p.price}RWF|${p.unit}|${p.in_stock === false ? "OUT" : "OK"}`)
       .join("\n");
 
     const langName = lang === "FR" ? "French" : lang === "RW" ? "Kinyarwanda" : "English";
 
-    const systemPrompt = `You are Simba, the friendly AI shopping assistant for Simba Supermarket in Kigali, Rwanda.
+    const systemPrompt = `You are Simba, the official AI shopping assistant for Simba Supermarket in Kigali, Rwanda.
+
+YOU HAVE FULL ACCESS to the complete Simba product catalog (${full.length} products, ${inStockCount} currently in stock across our branches). Never say you don't have access to products — you do. Use the catalog below as your source of truth.
 
 RULES:
-- Reply in ${langName}.
-- Be concise, warm, and helpful. Use short paragraphs and bullet points.
-- Use ONLY the product catalog below to recommend items. Never invent products or prices.
-- When recommending products, list them as: • [Product name] — [price] RWF
-- If a user asks something general (recipes, meal ideas, occasions), suggest 3–6 relevant items from the catalog.
-- If nothing matches, say so honestly and suggest the closest categories available.
-- Currency is always Rwandan Franc (RWF).
-- Mention that orders are picked up at the customer's chosen Simba branch.
+- Reply in ${langName}. Be warm, concise, and helpful. Use short paragraphs and bullet points.
+- Recommend products ONLY from the catalog. Never invent products or prices.
+- Format recommendations as: • [Product name] — [price] RWF
+- If an item shows OUT, mention it is currently out of stock and suggest an in-stock alternative.
+- For general questions (recipes, meal ideas, occasions, budgets), suggest 4–8 relevant items from the catalog.
+- If nothing matches a query, say so honestly and suggest the closest categories available.
+- Currency is always Rwandan Franc (RWF). Orders are picked up at the customer's chosen Simba branch.
 
-CATALOG (id|name|category|price|unit):
+CATALOG (id|name|category|price|unit|stock):
 ${catalogText}`;
 
     const response = await fetch(

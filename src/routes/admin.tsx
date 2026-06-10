@@ -1,7 +1,7 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { ArrowLeft, Shield, Trash2, UserPlus, Languages, Boxes } from "lucide-react";
+import { ArrowLeft, Shield, Trash2, UserPlus, Languages, Boxes, BarChart3 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useMyRoles, type AppRole } from "@/hooks/useRoles";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -180,12 +180,17 @@ function AdminPage() {
           <Link to="/"><ArrowLeft className="w-4 h-4 mr-1" />{t.home}</Link>
         </Button>
 
-        <div className="flex items-center gap-3 mb-6">
-          <div className="bg-primary/10 p-2 rounded-xl"><Shield className="w-5 h-5 text-primary" /></div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-black">{t.adminTitle}</h1>
-            <p className="text-xs text-muted-foreground">{t.adminDesc}</p>
+        <div className="flex items-center gap-3 mb-6 justify-between flex-wrap">
+          <div className="flex items-center gap-3">
+            <div className="bg-primary/10 p-2 rounded-xl"><Shield className="w-5 h-5 text-primary" /></div>
+            <div>
+              <h1 className="text-2xl md:text-3xl font-black">{t.adminTitle}</h1>
+              <p className="text-xs text-muted-foreground">{t.adminDesc}</p>
+            </div>
           </div>
+          <Button asChild className="gap-2">
+            <Link to="/admin/analytics"><BarChart3 className="w-4 h-4" />Branch analytics</Link>
+          </Button>
         </div>
 
         {/* ==== Setup tools: pre-translate + seed inventory ==== */}
