@@ -120,7 +120,12 @@ function StaffPage() {
     if (!activeBranchId) return;
     const ch = supabase
       .channel(`branch-orders-${activeBranchId}`)
-      .on("postgres_changes", { event: "*", schema: "public", table: "orders", filter: `branch_id=eq.${activeBranchId}` }, () => {
+      .on("postgres_changes", { event: "INSERT", schema: "public", table: "orders", filter: `branch_id=eq.${activeBranchId}` }, (payload) => {
+        const row = payload.new as { full_name?: string; total?: number };
+        toast.success(`🛎️ New order from ${row.full_name ?? "customer"} — ${row.total?.toLocaleString() ?? ""} RWF`, { duration: 6000 });
+        loadOrders();
+      })
+      .on("postgres_changes", { event: "UPDATE", schema: "public", table: "orders", filter: `branch_id=eq.${activeBranchId}` }, () => {
         loadOrders();
       })
       .subscribe();
