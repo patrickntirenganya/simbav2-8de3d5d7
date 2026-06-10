@@ -368,11 +368,11 @@ function AnalyticsPage() {
                               {i === 0 ? <Badge className="bg-yellow-500">🏆 1</Badge> : i === 1 ? <Badge variant="secondary">2</Badge> : i === 2 ? <Badge variant="secondary">3</Badge> : <span className="text-muted-foreground">{i + 1}</span>}
                             </td>
                             <td className="py-2 px-2 font-semibold">{s.name}</td>
-                            <td className="py-2 px-2 text-right">{formatPrice(s.revenue, "EN")}</td>
+                            <td className="py-2 px-2 text-right">{formatPrice(s.revenue)}</td>
                             <td className="py-2 px-2 text-right">{s.orders}</td>
                             <td className="py-2 px-2 text-right text-green-600">{s.completed}</td>
                             <td className="py-2 px-2 text-right text-red-600">{s.cancelled}</td>
-                            <td className="py-2 px-2 text-right">{formatPrice(s.avgOrder, "EN")}</td>
+                            <td className="py-2 px-2 text-right">{formatPrice(s.avgOrder)}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -443,7 +443,7 @@ function AnalyticsPage() {
                             <td className="py-2 px-2">{i + 1}</td>
                             <td className="py-2 px-2">{p.name}</td>
                             <td className="py-2 px-2 text-right">{p.qty}</td>
-                            <td className="py-2 px-2 text-right">{formatPrice(p.revenue, "EN")}</td>
+                            <td className="py-2 px-2 text-right">{formatPrice(p.revenue)}</td>
                           </tr>
                         ))}
                       </tbody>
