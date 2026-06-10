@@ -7,19 +7,12 @@ import { products } from "@/lib/products";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { formatPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
+import { supabase } from "@/integrations/supabase/client";
 
 interface Msg {
   role: "user" | "assistant";
   content: string;
 }
-
-const CATALOG = products.map((p) => ({
-  id: p.id,
-  name: p.name,
-  price: p.price,
-  category: p.category,
-  unit: p.unit,
-}));
 
 const FN_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-assistant`;
 
