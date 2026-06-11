@@ -57,6 +57,8 @@ function ProductDetail() {
     .filter((p) => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
 
+  const desc = buildProductDescription(product);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
