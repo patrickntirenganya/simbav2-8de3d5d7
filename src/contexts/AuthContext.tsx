@@ -59,6 +59,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const signInWithGoogle = async () => {
     const result = await lovable.auth.signInWithOAuth("google", {
       redirect_uri: window.location.origin,
+      // Always show Google's account chooser so users can pick which email to use
+      extraParams: { prompt: "select_account" },
     });
     if (result.error) return { error: result.error.message ?? "Google sign-in failed" };
     return { error: null };
