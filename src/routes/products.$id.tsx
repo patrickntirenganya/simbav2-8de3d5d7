@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, Plus, Minus, ShoppingBag } from "lucide-react";
+import { ArrowLeft, Plus, Minus, ShoppingBag, Check } from "lucide-react";
 import { toast } from "sonner";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { getProductById, products } from "@/lib/products";
 import { ProductCard } from "@/components/ProductCard";
 import { formatPrice } from "@/lib/format";
+import { buildProductDescription } from "@/lib/productDescription";
 
 export const Route = createFileRoute("/products/$id")({
   loader: ({ params }) => {
