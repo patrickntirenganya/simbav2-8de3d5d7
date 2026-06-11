@@ -1,14 +1,14 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
-import { ArrowLeft, ShieldCheck, Smartphone, Clock } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Smartphone, Clock, CreditCard } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useCart } from "@/contexts/CartContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
 import { BranchSelector } from "@/components/BranchSelector";
-import { MoMoDepositDialog } from "@/components/MoMoDepositDialog";
+import { PaymentDialog, type PaymentMethod } from "@/components/PaymentDialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
