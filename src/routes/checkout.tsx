@@ -234,26 +234,102 @@ function CheckoutPage() {
                     <Smartphone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h2 className="font-black text-lg">Mobile Money (MoMo)</h2>
-                    <p className="text-xs text-muted-foreground">MTN MoMo · Airtel Money</p>
+                    <h2 className="font-black text-lg">Payment method</h2>
+                    <p className="text-xs text-muted-foreground">Choose how you want to pay</p>
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="momoPhone">{t.momoNumber}</Label>
-                  <Input
-                    id="momoPhone"
-                    required
-                    inputMode="tel"
-                    maxLength={20}
-                    value={momoPhone}
-                    onChange={(e) => setMomoPhone(e.target.value)}
-                    placeholder="07XXXXXXXX"
-                  />
-                  <p className="text-xs text-muted-foreground flex items-center gap-1">
-                    <ShieldCheck className="w-3 h-3" />
-                    {t.momoHint}
-                  </p>
+
+                <div className="grid grid-cols-3 gap-2">
+                  {([
+                    { id: "mtn_momo", label: "MTN MoMo", icon: Smartphone },
+                    { id: "airtel_money", label: "Airtel Money", icon: Smartphone },
+                    { id: "card", label: "Card", icon: CreditCard },
+                  ] as const).map((m) => {
+                    const active = paymentMethod === m.id;
+                    const Icon = m.icon;
+                    return (
+                      <button
+                        key={m.id}
+                        type="button"
+                        onClick={() => setPaymentMethod(m.id)}
+                        className={cn(
+                          "p-3 rounded-xl border-2 text-xs font-bold flex flex-col items-center gap-1 transition-all",
+                          active
+                            ? "border-primary bg-primary/5 text-primary"
+                            : "border-border hover:border-primary/50",
+                        )}
+                      >
+                        <Icon className="w-5 h-5" />
+                        {m.label}
+                      </button>
+                    );
+                  })}
                 </div>
+
+                {paymentMethod === "mtn_momo" && (
+                  <div className="space-y-2">
+                    <Label htmlFor="momoPhone">MTN MoMo number</Label>
+                    <Input
+                      id="momoPhone"
+                      required
+                      inputMode="tel"
+                      maxLength={20}
+                      value={momoPhone}
+                      onChange={(e) => setMomoPhone(e.target.value)}
+                      placeholder="07XXXXXXXX"
+                    />
+                  </div>
+                )}
+
+                {paymentMethod === "airtel_money" && (
+                  <div className="space-y-2">
+                    <Label htmlFor="airtelPhone">Airtel Money number</Label>
+                    <Input
+                      id="airtelPhone"
+                      required
+                      inputMode="tel"
+                      maxLength={20}
+                      value={airtelPhone}
+                      onChange={(e) => setAirtelPhone(e.target.value)}
+                      placeholder="07XXXXXXXX"
+                    />
+                  </div>
+                )}
+
+                {paymentMethod === "card" && (
+                  <div className="space-y-3">
+                    <div className="space-y-2">
+                      <Label htmlFor="cardName">Name on card</Label>
+                      <Input id="cardName" value={cardName} onChange={(e) => setCardName(e.target.value)} placeholder="J. DOE" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="cardNumber">Card number</Label>
+                      <Input
+                        id="cardNumber"
+                        inputMode="numeric"
+                        maxLength={23}
+                        value={cardNumber}
+                        onChange={(e) => setCardNumber(e.target.value.replace(/[^\d ]/g, ""))}
+                        placeholder="4242 4242 4242 4242"
+                      />
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-2">
+                        <Label htmlFor="cardExpiry">Expiry (MM/YY)</Label>
+                        <Input id="cardExpiry" maxLength={7} value={cardExpiry} onChange={(e) => setCardExpiry(e.target.value)} placeholder="12/27" />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="cardCvv">CVV</Label>
+                        <Input id="cardCvv" inputMode="numeric" maxLength={4} value={cardCvv} onChange={(e) => setCardCvv(e.target.value.replace(/\D/g, ""))} placeholder="123" />
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                  <ShieldCheck className="w-3 h-3" />
+                  Payments are simulated — no real money is moved in this demo.
+                </p>
               </CardContent>
             </Card>
           </div>
