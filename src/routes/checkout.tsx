@@ -33,10 +33,16 @@ function CheckoutPage() {
   const [pickupTime, setPickupTime] = useState<string | null>(null);
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("mtn_momo");
   const [momoPhone, setMomoPhone] = useState("");
+  const [airtelPhone, setAirtelPhone] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardExpiry, setCardExpiry] = useState("");
+  const [cardCvv, setCardCvv] = useState("");
+  const [cardName, setCardName] = useState("");
   const [notes, setNotes] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [momoOpen, setMomoOpen] = useState(false);
+  const [payOpen, setPayOpen] = useState(false);
 
   const slots = useMemo(() => generatePickupSlots(), []);
 
