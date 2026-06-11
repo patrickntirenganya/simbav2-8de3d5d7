@@ -60,22 +60,39 @@ function CheckoutPage() {
 
   if (authLoading || !user) return null;
 
-  const validateMomo = (p: string) => /^(\+?250)?7[2389]\d{7}$/.test(p.replace(/\s/g, ""));
+  const validatePhone = (p: string) => /^(\+?250)?7[2389]\d{7}$/.test(p.replace(/\s/g, ""));
+  const validateCard = () => {
+    const digits = cardNumber.replace(/\s/g, "");
+    return (
+      /^\d{13,19}$/.test(digits) &&
+      /^(0[1-9]|1[0-2])\s*\/\s*\d{2}$/.test(cardExpiry.trim()) &&
+      /^\d{3,4}$/.test(cardCvv.trim()) &&
+      cardName.trim().length > 1
+    );
+  };
+
+  const paymentValid =
+    (paymentMethod === "mtn_momo" && validatePhone(momoPhone)) ||
+    (paymentMethod === "airtel_money" && validatePhone(airtelPhone)) ||
+    (paymentMethod === "card" && validateCard());
 
   const canSubmit =
     !!branchId &&
     !!pickupTime &&
     fullName.trim().length > 1 &&
     phone.trim().length >= 9 &&
-    validateMomo(momoPhone) &&
+    paymentValid &&
     cart.length > 0;
+
+  const paymentReference =
+    paymentMethod === "mtn_momo"
+      ? momoPhone
+      : paymentMethod === "airtel_money"
+        ? airtelPhone
+        : `•••• ${cardNumber.replace(/\s/g, "").slice(-4)}`;
 
   const handleStartPayment = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validateMomo(momoPhone)) {
-      toast.error(t.invalidMomo);
-      return;
-    }
     if (!branchId || !pickupTime) {
       toast.error(t.selectBranch);
       return;
@@ -84,11 +101,22 @@ function CheckoutPage() {
       toast.error(t.minOrder);
       return;
     }
-    setMomoOpen(true);
+    if (!paymentValid) {
+      toast.error("Please complete your payment details");
+      return;
+    }
+    setPayOpen(true);
   };
 
   const handleConfirmedPayment = async () => {
     setSubmitting(true);
+    const momoRef =
+      paymentMethod === "mtn_momo"
+        ? momoPhone.trim()
+        : paymentMethod === "airtel_money"
+          ? airtelPhone.trim()
+          : `CARD-${cardNumber.replace(/\s/g, "").slice(-4)}`;
+
     const { error } = await supabase
       .from("orders")
       .insert({
@@ -99,7 +127,7 @@ function CheckoutPage() {
         phone: phone.trim(),
         address: "Pick-up at branch",
         city: "Kigali",
-        momo_phone: momoPhone.trim(),
+        momo_phone: momoRef,
         items: cart.map((c) => ({
           id: c.id,
           name: c.name,
@@ -119,7 +147,7 @@ function CheckoutPage() {
       .single();
 
     setSubmitting(false);
-    setMomoOpen(false);
+    setPayOpen(false);
 
     if (error) {
       toast.error(error.message);
