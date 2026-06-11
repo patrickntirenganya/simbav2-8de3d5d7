@@ -380,11 +380,12 @@ function CheckoutPage() {
           </div>
         </form>
 
-        <MoMoDepositDialog
-          open={momoOpen}
-          onOpenChange={setMomoOpen}
+        <PaymentDialog
+          open={payOpen}
+          onOpenChange={setPayOpen}
           amount={PICKUP_DEPOSIT_RWF}
-          momoPhone={momoPhone}
+          method={paymentMethod}
+          reference={paymentReference}
           onConfirmed={handleConfirmedPayment}
         />
       </main>
