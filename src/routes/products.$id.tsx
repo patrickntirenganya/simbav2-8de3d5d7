@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, Plus, Minus, ShoppingBag } from "lucide-react";
+import { ArrowLeft, Plus, Minus, ShoppingBag, Check } from "lucide-react";
 import { toast } from "sonner";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { getProductById, products } from "@/lib/products";
 import { ProductCard } from "@/components/ProductCard";
 import { formatPrice } from "@/lib/format";
+import { buildProductDescription } from "@/lib/productDescription";
 
 export const Route = createFileRoute("/products/$id")({
   loader: ({ params }) => {
@@ -55,6 +56,8 @@ function ProductDetail() {
   const related = products
     .filter((p) => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
+
+  const desc = buildProductDescription(product);
 
   return (
     <div className="min-h-screen bg-background">
@@ -127,6 +130,39 @@ function ProductDetail() {
             )}
           </div>
         </div>
+
+        <section className="mt-12 grid md:grid-cols-3 gap-6">
+          <div className="md:col-span-2 space-y-5">
+            <div>
+              <h2 className="text-2xl font-black mb-3">Description</h2>
+              <p className="text-muted-foreground leading-relaxed">{desc.summary}</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-black mb-3">Highlights</h3>
+              <ul className="space-y-2">
+                {desc.highlights.map((h) => (
+                  <li key={h} className="flex items-start gap-2 text-sm">
+                    <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="bg-card border rounded-2xl p-5 h-fit">
+            <h3 className="text-lg font-black mb-3">Product details</h3>
+            <dl className="space-y-2 text-sm">
+              {desc.details.map((d) => (
+                <div key={d.label} className="flex justify-between gap-3 border-b last:border-0 pb-2 last:pb-0">
+                  <dt className="text-muted-foreground">{d.label}</dt>
+                  <dd className="font-semibold text-right break-words">{d.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+
 
         {related.length > 0 && (
           <section className="mt-16">

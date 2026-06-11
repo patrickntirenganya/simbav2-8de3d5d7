@@ -1,14 +1,14 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
-import { ArrowLeft, ShieldCheck, Smartphone, Clock } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Smartphone, Clock, CreditCard } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useCart } from "@/contexts/CartContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
 import { BranchSelector } from "@/components/BranchSelector";
-import { MoMoDepositDialog } from "@/components/MoMoDepositDialog";
+import { PaymentDialog, type PaymentMethod } from "@/components/PaymentDialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -33,10 +33,16 @@ function CheckoutPage() {
   const [pickupTime, setPickupTime] = useState<string | null>(null);
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("mtn_momo");
   const [momoPhone, setMomoPhone] = useState("");
+  const [airtelPhone, setAirtelPhone] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardExpiry, setCardExpiry] = useState("");
+  const [cardCvv, setCardCvv] = useState("");
+  const [cardName, setCardName] = useState("");
   const [notes, setNotes] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [momoOpen, setMomoOpen] = useState(false);
+  const [payOpen, setPayOpen] = useState(false);
 
   const slots = useMemo(() => generatePickupSlots(), []);
 
@@ -54,22 +60,39 @@ function CheckoutPage() {
 
   if (authLoading || !user) return null;
 
-  const validateMomo = (p: string) => /^(\+?250)?7[2389]\d{7}$/.test(p.replace(/\s/g, ""));
+  const validatePhone = (p: string) => /^(\+?250)?7[2389]\d{7}$/.test(p.replace(/\s/g, ""));
+  const validateCard = () => {
+    const digits = cardNumber.replace(/\s/g, "");
+    return (
+      /^\d{13,19}$/.test(digits) &&
+      /^(0[1-9]|1[0-2])\s*\/\s*\d{2}$/.test(cardExpiry.trim()) &&
+      /^\d{3,4}$/.test(cardCvv.trim()) &&
+      cardName.trim().length > 1
+    );
+  };
+
+  const paymentValid =
+    (paymentMethod === "mtn_momo" && validatePhone(momoPhone)) ||
+    (paymentMethod === "airtel_money" && validatePhone(airtelPhone)) ||
+    (paymentMethod === "card" && validateCard());
 
   const canSubmit =
     !!branchId &&
     !!pickupTime &&
     fullName.trim().length > 1 &&
     phone.trim().length >= 9 &&
-    validateMomo(momoPhone) &&
+    paymentValid &&
     cart.length > 0;
+
+  const paymentReference =
+    paymentMethod === "mtn_momo"
+      ? momoPhone
+      : paymentMethod === "airtel_money"
+        ? airtelPhone
+        : `•••• ${cardNumber.replace(/\s/g, "").slice(-4)}`;
 
   const handleStartPayment = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validateMomo(momoPhone)) {
-      toast.error(t.invalidMomo);
-      return;
-    }
     if (!branchId || !pickupTime) {
       toast.error(t.selectBranch);
       return;
@@ -78,11 +101,22 @@ function CheckoutPage() {
       toast.error(t.minOrder);
       return;
     }
-    setMomoOpen(true);
+    if (!paymentValid) {
+      toast.error("Please complete your payment details");
+      return;
+    }
+    setPayOpen(true);
   };
 
   const handleConfirmedPayment = async () => {
     setSubmitting(true);
+    const momoRef =
+      paymentMethod === "mtn_momo"
+        ? momoPhone.trim()
+        : paymentMethod === "airtel_money"
+          ? airtelPhone.trim()
+          : `CARD-${cardNumber.replace(/\s/g, "").slice(-4)}`;
+
     const { error } = await supabase
       .from("orders")
       .insert({
@@ -93,7 +127,7 @@ function CheckoutPage() {
         phone: phone.trim(),
         address: "Pick-up at branch",
         city: "Kigali",
-        momo_phone: momoPhone.trim(),
+        momo_phone: momoRef,
         items: cart.map((c) => ({
           id: c.id,
           name: c.name,
@@ -113,7 +147,7 @@ function CheckoutPage() {
       .single();
 
     setSubmitting(false);
-    setMomoOpen(false);
+    setPayOpen(false);
 
     if (error) {
       toast.error(error.message);
@@ -200,26 +234,102 @@ function CheckoutPage() {
                     <Smartphone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h2 className="font-black text-lg">Mobile Money (MoMo)</h2>
-                    <p className="text-xs text-muted-foreground">MTN MoMo · Airtel Money</p>
+                    <h2 className="font-black text-lg">Payment method</h2>
+                    <p className="text-xs text-muted-foreground">Choose how you want to pay</p>
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="momoPhone">{t.momoNumber}</Label>
-                  <Input
-                    id="momoPhone"
-                    required
-                    inputMode="tel"
-                    maxLength={20}
-                    value={momoPhone}
-                    onChange={(e) => setMomoPhone(e.target.value)}
-                    placeholder="07XXXXXXXX"
-                  />
-                  <p className="text-xs text-muted-foreground flex items-center gap-1">
-                    <ShieldCheck className="w-3 h-3" />
-                    {t.momoHint}
-                  </p>
+
+                <div className="grid grid-cols-3 gap-2">
+                  {([
+                    { id: "mtn_momo", label: "MTN MoMo", icon: Smartphone },
+                    { id: "airtel_money", label: "Airtel Money", icon: Smartphone },
+                    { id: "card", label: "Card", icon: CreditCard },
+                  ] as const).map((m) => {
+                    const active = paymentMethod === m.id;
+                    const Icon = m.icon;
+                    return (
+                      <button
+                        key={m.id}
+                        type="button"
+                        onClick={() => setPaymentMethod(m.id)}
+                        className={cn(
+                          "p-3 rounded-xl border-2 text-xs font-bold flex flex-col items-center gap-1 transition-all",
+                          active
+                            ? "border-primary bg-primary/5 text-primary"
+                            : "border-border hover:border-primary/50",
+                        )}
+                      >
+                        <Icon className="w-5 h-5" />
+                        {m.label}
+                      </button>
+                    );
+                  })}
                 </div>
+
+                {paymentMethod === "mtn_momo" && (
+                  <div className="space-y-2">
+                    <Label htmlFor="momoPhone">MTN MoMo number</Label>
+                    <Input
+                      id="momoPhone"
+                      required
+                      inputMode="tel"
+                      maxLength={20}
+                      value={momoPhone}
+                      onChange={(e) => setMomoPhone(e.target.value)}
+                      placeholder="07XXXXXXXX"
+                    />
+                  </div>
+                )}
+
+                {paymentMethod === "airtel_money" && (
+                  <div className="space-y-2">
+                    <Label htmlFor="airtelPhone">Airtel Money number</Label>
+                    <Input
+                      id="airtelPhone"
+                      required
+                      inputMode="tel"
+                      maxLength={20}
+                      value={airtelPhone}
+                      onChange={(e) => setAirtelPhone(e.target.value)}
+                      placeholder="07XXXXXXXX"
+                    />
+                  </div>
+                )}
+
+                {paymentMethod === "card" && (
+                  <div className="space-y-3">
+                    <div className="space-y-2">
+                      <Label htmlFor="cardName">Name on card</Label>
+                      <Input id="cardName" value={cardName} onChange={(e) => setCardName(e.target.value)} placeholder="J. DOE" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="cardNumber">Card number</Label>
+                      <Input
+                        id="cardNumber"
+                        inputMode="numeric"
+                        maxLength={23}
+                        value={cardNumber}
+                        onChange={(e) => setCardNumber(e.target.value.replace(/[^\d ]/g, ""))}
+                        placeholder="4242 4242 4242 4242"
+                      />
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-2">
+                        <Label htmlFor="cardExpiry">Expiry (MM/YY)</Label>
+                        <Input id="cardExpiry" maxLength={7} value={cardExpiry} onChange={(e) => setCardExpiry(e.target.value)} placeholder="12/27" />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="cardCvv">CVV</Label>
+                        <Input id="cardCvv" inputMode="numeric" maxLength={4} value={cardCvv} onChange={(e) => setCardCvv(e.target.value.replace(/\D/g, ""))} placeholder="123" />
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                  <ShieldCheck className="w-3 h-3" />
+                  Payments are simulated — no real money is moved in this demo.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -270,11 +380,12 @@ function CheckoutPage() {
           </div>
         </form>
 
-        <MoMoDepositDialog
-          open={momoOpen}
-          onOpenChange={setMomoOpen}
+        <PaymentDialog
+          open={payOpen}
+          onOpenChange={setPayOpen}
           amount={PICKUP_DEPOSIT_RWF}
-          momoPhone={momoPhone}
+          method={paymentMethod}
+          reference={paymentReference}
           onConfirmed={handleConfirmedPayment}
         />
       </main>
