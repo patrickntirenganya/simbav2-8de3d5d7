@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { ShoppingCart, Search, Globe, Moon, Sun, User, LogOut, Package } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import { useCart } from "@/contexts/CartContext";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { useAuth } from "@/contexts/AuthContext";
@@ -27,6 +28,8 @@ export function Header({ search = "", setSearch }: HeaderProps) {
   const { user, signOut } = useAuth();
   const { isAdmin, hasStaffAccess } = useMyRoles();
   const navigate = useNavigate();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const handleSearchChange = (v: string) => {
     if (setSearch) {
@@ -70,7 +73,7 @@ export function Header({ search = "", setSearch }: HeaderProps) {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {mounted && theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </Button>
 
           <DropdownMenu>
