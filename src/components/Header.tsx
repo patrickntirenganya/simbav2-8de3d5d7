@@ -28,6 +28,8 @@ export function Header({ search = "", setSearch }: HeaderProps) {
   const { user, signOut } = useAuth();
   const { isAdmin, hasStaffAccess } = useMyRoles();
   const navigate = useNavigate();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const handleSearchChange = (v: string) => {
     if (setSearch) {
