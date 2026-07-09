@@ -155,7 +155,7 @@ function CheckoutPage() {
     }
     toast.success(t.orderPlaced, { description: t.orderPlacedDesc });
     clearCart();
-    navigate({ to: "/orders" });
+    navigate({ to: "/receipt/$id", params: { id: (data as { id: string }).id } });
   };
 
   return (
