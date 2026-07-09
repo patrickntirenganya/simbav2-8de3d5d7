@@ -117,7 +117,7 @@ function CheckoutPage() {
           ? airtelPhone.trim()
           : `CARD-${cardNumber.replace(/\s/g, "").slice(-4)}`;
 
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("orders")
       .insert({
         user_id: user.id,
