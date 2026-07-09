@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Zap, ShieldCheck, Store, ArrowRight, Star, MapPin } from "lucide-react";
 import { Header } from "@/components/Header";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { ProductCard } from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -39,22 +40,9 @@ function HomePage() {
       <Header />
 
       <main className="flex-1">
-        {/* ============== HERO with looping video background ============== */}
+        {/* ============== HERO with rotating photo slideshow ============== */}
         <section className="relative overflow-hidden bg-slate-900 text-white">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            poster="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&q=80&w=1600"
-            className="absolute inset-0 w-full h-full object-cover opacity-50"
-          >
-            <source
-              src="https://cdn.pixabay.com/video/2022/03/15/110874-688321400_large.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <HeroSlideshow />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-slate-900/30" />
 
           <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32">

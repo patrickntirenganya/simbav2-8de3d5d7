@@ -144,3 +144,13 @@
     color: var(--color-foreground);
   }
 }
+
+/* Print-only rules: hide overlays (toaster, AI assistant) when printing the receipt */
+@media print {
+  [data-sonner-toaster],
+  [data-simba-ai-launcher],
+  [data-simba-ai-panel] {
+    display: none !important;
+  }
+  body { background: #ffffff !important; }
+}

@@ -18,6 +18,7 @@ import { Route as CheckoutRouteImport } from './routes/checkout'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ReceiptIdRouteImport } from './routes/receipt.$id'
 import { Route as ProductsIdRouteImport } from './routes/products.$id'
 import { Route as AdminAnalyticsRouteImport } from './routes/admin.analytics'
 
@@ -66,6 +67,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReceiptIdRoute = ReceiptIdRouteImport.update({
+  id: '/receipt/$id',
+  path: '/receipt/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsIdRoute = ProductsIdRouteImport.update({
   id: '/$id',
   path: '/$id',
@@ -89,6 +95,7 @@ export interface FileRoutesByFullPath {
   '/staff': typeof StaffRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/products/$id': typeof ProductsIdRoute
+  '/receipt/$id': typeof ReceiptIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -102,6 +109,7 @@ export interface FileRoutesByTo {
   '/staff': typeof StaffRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/products/$id': typeof ProductsIdRoute
+  '/receipt/$id': typeof ReceiptIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -116,6 +124,7 @@ export interface FileRoutesById {
   '/staff': typeof StaffRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/products/$id': typeof ProductsIdRoute
+  '/receipt/$id': typeof ReceiptIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -131,6 +140,7 @@ export interface FileRouteTypes {
     | '/staff'
     | '/admin/analytics'
     | '/products/$id'
+    | '/receipt/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -144,6 +154,7 @@ export interface FileRouteTypes {
     | '/staff'
     | '/admin/analytics'
     | '/products/$id'
+    | '/receipt/$id'
   id:
     | '__root__'
     | '/'
@@ -157,6 +168,7 @@ export interface FileRouteTypes {
     | '/staff'
     | '/admin/analytics'
     | '/products/$id'
+    | '/receipt/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -169,6 +181,7 @@ export interface RootRouteChildren {
   ProductsRoute: typeof ProductsRouteWithChildren
   ResetPasswordRoute: typeof ResetPasswordRoute
   StaffRoute: typeof StaffRoute
+  ReceiptIdRoute: typeof ReceiptIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -236,6 +249,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/receipt/$id': {
+      id: '/receipt/$id'
+      path: '/receipt/$id'
+      fullPath: '/receipt/$id'
+      preLoaderRoute: typeof ReceiptIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/$id': {
       id: '/products/$id'
       path: '/$id'
@@ -285,6 +305,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProductsRoute: ProductsRouteWithChildren,
   ResetPasswordRoute: ResetPasswordRoute,
   StaffRoute: StaffRoute,
+  ReceiptIdRoute: ReceiptIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
